@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+}
+
+
+
+       #id{
+          
+           font-family:Georgia, 'Times New Roman', Times, serif ;
+           text-align: center;
+           
+
+
+       }
+#firstdiv{
+   padding-top: 7cm;
+   text-align: center;
+   padding-top: 7cm;
+   text-align: center;
+   color: purple;
+   font-size: small;
+   font-family: ui-sans-serif;
+   margin: 300px;
+   position: absolute;
+   right: auto;
+   padding-bottom: 250px;
+
+
+}
+.navbar {
+ width: 100%;
+ height: 50px;
+ background-color: black;
+ position: sticky;
+ top: 0;
+}
+
+.navbar-container {
+ display: flex;
+ align-items: center;
+ padding: 0 50px;
+ height: 100%;
+ color: white;
+ font-family: "Sen", sans-serif;
+}
+
+
+
+.logo {
+ font-size: 30px;
+ color:blueviolet;
+ font-family:monospace;
+}
+
+.menu-container {
+ flex: 6;
+}
+
+.menu-list {
+ display: flex;
+ list-style: none;
+ color: blueviolet;
+}
+
+.menu-list-item {
+ margin-right: 30px;
+ color:blueviolet;
+ 
+}
+
+.menu-list-item.active {
+ font-weight: bold;
+}
+.profile-container {
+ flex: 2;
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+}
+
+.profile-text-container {
+ margin: 0 20px;
+ 
+ 
+ 
+}
+
+
+
+
+.seriale{
+  
+ color: blueviolet;
+ background-color: black;
+ border-radius: 7%;
+ border: none;
+
+ 
+ 
+ 
+}
+   
+   
+
+#tekst2{
+   color:purple;
+   align-self: center;
+   font-size: medium;
+   
+
+}
+#contactform {
+ justify-content: center;
+
+  width:400px;
+  height:400px;
+padding: auto;
+
+
+border-style:groove;
+margin:auto;
+position:absolute;
+right:auto;
+border:none;
+   border-radius:0.5px;
+   text-align: center;
+   position:absolute;
+     right:0px;
+     left:0px;
+
+}
+
+
+
+#submit {
+  border-radius:50px;
+  width:200px;
+  display: flex;
+  justify-self: center;
+
+
+
+}
+#name {
+ border-radius:35px;
+background-color:lightgray;
+width:200px;
+height:30px;
+}
+#surname {
+ border-radius:35px;
+background-color:lightgray;
+width:200px;
+height:30px;
+ 
+}
+#email {
+ border-radius:35px;
+background-color:lightgray;
+width:200px;
+height:30px;
+}
+#country {
+ border-radius:35px;
+background-color:lightgray;
+width:200px;
+height:30px;
+}
+#subject {
+ border-radius:5px;
+background-color:lightgray;
+width:200px;
+height:10px;
+}
+
+#avatar{
+   width: 40px;
+   height: 30px;
+  
+}
+#butoni{
+   border-radius: 16px;
+}
+.kontaktinfo{
+   display: flex;
+   justify-content: flex-start;
+
+}
+
+
