@@ -113,3 +113,10 @@
     padding-top: 2cm;
 
 }
+.info{
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0.5cm;
+
+}
