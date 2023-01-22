@@ -1,7 +1,5 @@
-input[type=text],
-input[type=password] {
+.kushtet {
     width: 350;
-
     padding: 10px;
     margin: 20px ;
     justify-content: center;
@@ -85,9 +83,4 @@ justify-content: center;
     flex-direction: column;
 
 
-}
-#perdoruesth{
-    box-shadow: none;
-    border: none;
-    color: aqua;
 }
