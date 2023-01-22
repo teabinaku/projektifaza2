@@ -54,26 +54,26 @@
 
 
   <div id = "contactform">
-      <h3 style="color: palevioletred; font-size: xx-large;  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Contact form </h3>
-         <label style ="color: palevioletred;"> Emri :</label>
+      <h3 style="color: blueviolet ;font-size: xx-large;  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Contact form </h3>
+         <label class="font"> Emri :</label>
          <input type ="text" id = "name"  placeholder="Shkruani emrin tuaj">
          <br> <br>
-         <label style = "color:palevioletred"> Mbiemri :</label>
+         <label class="font"> Mbiemri :</label>
          <input type = "text" id = "surname" placeholder="Shkruani mbiemrin tuaj ">
          <br> <br>
-         <label style = "color:palevioletred"> Shteti :</label>
+         <label class="font"> Shteti :</label>
          <select id = "country" name = "country">
            <option value = "Kosova"> Kosova </option>
            <option value = "Albania"> Albania </option> 
          </select>
          <br> <br>
-         <label style ="color: palevioletred;" >Email adresa: </label>
+         <label class="font" >Email adresa: </label>
          <input type = "email" id = "email" placeholder="Shkruani email-in tuaj">
          <br> <br>
          
       <textarea id ="subject"  name ="subject" placeholder="Shkruani nje mesazh" style=" color:palevioletred; height:50px;"></textarea>
       <br> <br>  <br> <br>
-        <button id ="submit"  onclick="auth(event)"  type = "button" style="width: 200px; color: palevioletred; border-radius: 50px; text-align: center; margin-right: 30px; width:200px; height: 30px; background-color:lightgray; " onclick="validoLogin()"> Submit </button>
+        <button id ="submit"  onclick="auth(event)"  type = "button" onclick="validoLogin()"> Submit </button>
      </div>
    
 

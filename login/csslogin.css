@@ -1,6 +1,4 @@
-input[type=text],
-input[type=password] {
-    width: 350;
+.kushtet {
 
     padding: 10px;
     margin: 20px ;
@@ -10,6 +8,7 @@ input[type=password] {
     border: 50px;
     box-sizing: border-box;
     border-radius: 50px;
+    width: 220;
    
     
     
@@ -86,8 +85,4 @@ justify-content: center;
 
 
 }
-#perdoruesth{
-    box-shadow: none;
-    border: none;
-    color: aqua;
-}
+

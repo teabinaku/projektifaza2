@@ -134,7 +134,9 @@
     border: none;
 
 }
-#divpar{
+#divipar{
+    display: flex;
+    align-items: center;
 
        
 
@@ -142,5 +144,19 @@
 
 .info{
     font-size: x-large;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-bottom: 4cm;
+
+}
+#avatar3{
+
+    width: 400px;
+    height: 400px;
+    padding-top: 50px;
+    
+    padding-left: 80px;
+
 
 }

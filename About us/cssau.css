@@ -113,8 +113,8 @@
  justify-content: center;
 
 
-  width:400px;
-  height:400px;
+  width:600px;
+  height:500px;
 padding: auto; 
 
 
@@ -128,7 +128,7 @@ border:none;
    position:absolute;
      right:0px;
      left:0px;
-     background-color: 	rgb(40,40,40);
+     background-color: 	rgb(24,24,24);
 
 }
 
@@ -137,8 +137,17 @@ border:none;
 #submit {
   border-radius:50px;
   width:200px;
-  display: flex;
+
+
   justify-self: center;
+  width: 200px;
+   color: blueviolet;
+    border-radius: 50px;
+     text-align: center; 
+    
+      width:200px;
+       height:30px;
+        background-color:lightgray;
 
 
 
@@ -211,6 +220,8 @@ height:10px;
    border: none;
 
 }
-
-
+.font{
+   color: blueviolet;
+   display: flow-root;
+}
 
