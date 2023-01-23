@@ -136,7 +136,8 @@
 }
 #divipar{
     display: flex;
-    align-items: center;
+   
+   
 
        
 
@@ -147,16 +148,31 @@
     display: flex;
     justify-content: center;
     margin-left: 30px;
-    margin-bottom: 4cm;
+    margin-bottom: 1.3cm;
+    color: blueviolet;
+    margin-top: 1cm;
+    margin-right: 9cm;
+
 
 }
 #avatar3{
 
     width: 400px;
     height: 400px;
-    padding-top: 50px;
-    
+   
     padding-left: 80px;
+    padding-bottom: 550px;
+    margin-top: 2cm;
+}
 
+
+
+#dividyt{
+    height: 15cm;
+    background-color: rgb(24,24,24);
+    width: 15cm;
+    margin-left: 2cm;
+    margin-top:2cm;
+    border-radius: 23px;
 
 }
