@@ -8,7 +8,7 @@ function auth(event) {
 
     
 
-    if (country==="" || surname==="" || name==="" || email===""  ){
+ if (country==="" || surname==="" || name==="" || email===""  ){
          alert('Ju nuk i keni plotesu te gjitha kushtet');
          return;
          
@@ -17,5 +17,8 @@ function auth(event) {
         alert('Forma juaj pranohet');
         
     }
-    
+  
+
+   
+  
 }

@@ -10,7 +10,7 @@ function auth(event) {
          
     } else {
         
-        window.location.replace("file:///Users/apple/Desktop/Projekt/Main%20page/index.html");
+        window.location.replace("/Users/apple/Desktop/projektifaza2/Main page/index.html");
         
     }
     
