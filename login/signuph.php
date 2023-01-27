@@ -1,0 +1,181 @@
+<?php
+/*
+require("signup.html");
+
+class Klient{
+    public $user;
+    public $pass;
+    public $email;
+    public $nrtel;
+    public $mosha;
+    public $shteti;
+
+
+    this->username=$user;
+    this->password=$pass;
+    this->email=$email;
+    this->nrtel=$nrtel;
+    this->shteti=$shteti;
+  }
+  public function getusername(){
+     return this->username=$user;
+  }
+  public function setusername($newusername){
+    this->username=$newusername;
+  }
+
+  public function getpassword(){
+    return this->password=$pass;
+
+  }
+  public function setpassword($newpassword){
+    this->password=$newpassword;
+  }
+  public function getemail(){
+    return this->email=$email;
+
+  }
+  public function setemail($newemail){
+    this->email=$newemail;
+
+  }
+  public function getnrtel(){
+    return this->email=$email;
+  }
+  public  function setnrtel($newnrtel){
+    this->nrtel=$nrtel;
+  }
+  public  function  getshteti(){
+    return this->shteti=$shteti;
+  }
+  public function setshteti($newshteti){
+    this->shteti=$newshteti;
+  }
+  public function  toString(){
+    return 'Perdoruesi me emer'.$this->username .'-me email'.$this->email;
+  }
+}
+ var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var nrtel = document.getElementById("nrtel").value;
+    var shteti = document.getElementById("shteti").value;
+    var emri = document.getElementById("emri").value;
+    var mbiemri = document.getElementById("mbiemri").value;
+    var mosha = document.getElementById("mosha").value;
+
+function signup(){
+	if(isset($_POST['submit']) { 
+	
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	$email = $_POST['email'];
+	$shteti = $_POST['shteti'];
+	$mbiemri=$_POST['mbiemri'];
+	$emri=$_POST['emmri'];
+	
+	}else{
+	  echo'Ju nuk keni shtypur butonin per tu rregjistruar'
+	}
+	}
+	*/
+	$host='localhost';
+	$user='sa';
+	$password="";
+	$db='demo';
+
+	mysql_connect($host,$user,$password);
+	mysql_select_db($db);
+	if(isset($_POST['submit'])){ 
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	$email = $_POST['email'];
+	$shteti = $_POST['shteti'];
+	$mbiemri=$_POST['mbiemri'];
+	$emri=$_POST['emri'];
+	
+	$sql='Select * from loginform where user='".$emri."' AND password ".$password."limit 1";
+	$result=mysql_query($sql);
+
+	if(mysql_num_rows($result)==1){
+		echo'You have succesfullu loged in';
+		exit();
+
+	
+	}else{
+		echo'You have not acessed the site'
+		}
+	}
+
+
+	
+
+?>
+
+<html>
+	<head>
+	<title>WEBMOVIE</title>
+
+	<link rel="stylesheet" href="signup.css">
+</head>
+
+<body style="background-color: black;">
+	<form method="post" action="./signup.php">
+	<div id="div1">
+		<form action="./loginfinal.html">
+		<button class="fonti">Login</button>
+	</form>
+	<form action="./signup.html">
+		<button class="fonti">Sign up</button>
+	</form>
+	</div>
+	
+		<div class="imgcontainer">
+			<span id="login">Sign up</span>
+			<img src="5087579.png" >
+			
+
+		<div class="Klasa2">
+			<label >Emri:</label>
+			<input type="text" placeholder="Ju lutem shkruani emrin"  id ="emri" class="kushtet">
+            <br>
+			<label>Mbiemri:</label>
+			<input type="text" placeholder="Ju lutem shkruani Mbiemrin"  id ="mbiemri" class="kushtet">
+            <br>
+			
+
+			<label>Username:</label>
+			
+			<input type="text" placeholder="Ju lutem shkruani username"  id ="email" class="kushtet">
+            <br>
+            
+			<label>Password:</label>
+			<input type ="password" placeholder="Ju lutem shkruani passwordin" id="password" class="kushtet">
+            <br>
+			<label>Mosha:</label>
+			<input type="number" placeholder="Ju lutem shkruani moshen tuaj"  id ="mosha" class="kushtet">
+            <br>
+			<label>Shteti:</label>
+			<select  id="shteti" class="kushtet">
+				<option value = "Kosova"> Kosova </option>
+				<option value = "Albania"> Albania </option> 
+				<option value = "Albania"> Germany</option> 
+				<option value = "Albania"> France</option> 
+			  </select>
+            <br>
+			<label>Nr.tel:</label>
+			<input type="tel" placeholder="Ju lutem shkruani numrin kontaktues"  id ="nrtel" class="kushtet">
+
+           
+	<div class = "login"> 
+		
+			<button  name="submit"type ="submit" >Sign UP </button>
+			<h2><?php signup()?></h2>
+		
+			</div>
+			
+            </div>
+
+	
+</div>
+</form>
+</body>
