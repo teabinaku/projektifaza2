@@ -92,7 +92,7 @@
 }
 #tekst{
  text-align: center;
- color:black;
+ color:white;
  font-size: xx-large;
  padding-top: 25%;
 
@@ -137,6 +137,16 @@
     background-color: black;
     border: none;
 
+}
+
+#soon{
+    background: black;
+    height: 500px;
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+   border-radius: 15px;
+    margin-top: 150px;
 }
 
 
