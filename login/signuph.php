@@ -1,5 +1,4 @@
-<!--
-<?php
+
 /*
 require("signup.html");
 
@@ -106,7 +105,25 @@ function signup(){
 		echo'You have not acessed the site'
 		}
 	}
--->
+
+<?php
+require'signunpcon.php';
+
+if(isset($_POST['submit'])){ 
+	
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	$email = $_POST['email'];
+	$shteti = $_POST['shteti'];
+	$mbiemri=$_POST['mbiemri'];
+	$emri=$_POST['emri'];
+}
+$query="INSERT INTO moviepagetable VALUES('','$username','$password','$email','$shteti','$mbiemri','$emri'
+mysqli_query($conn,$query);
+echo'uboooo';
+
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -117,11 +134,11 @@ function signup(){
 </head>
 
 <body style="background-color: black;">
-	<form method="post" action="./signup.php">
+	<form action="./loginfinal.html">
 	<div id="div1">
 		<button class="fonti">Login</button>
 	</form>
-	<form action="./signup.html">
+	<form action="./signuph.html">
 		<button class="fonti">Sign up</button>
 	</form>
 	</div>
@@ -130,7 +147,7 @@ function signup(){
 			<span id="login">Sign up</span>
 			<img src="5087579.png" >
 			
-<form action="signunp.php" method="post">
+<form action="signunpcon.php" method="post">
 		<div class="Klasa2">
 			<label >Emri:</label>
 			<input  name="emri";type="text" placeholder="Ju lutem shkruani emrin"  id ="emri" class="kushtet">
@@ -180,7 +197,7 @@ function signup(){
 </div>
 </form>
 
-</form>
+
 </body>
 
 	

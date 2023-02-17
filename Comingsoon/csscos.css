@@ -148,6 +148,26 @@
    border-radius: 15px;
     margin-top: 150px;
 }
+#signupbutton{
+    display: flex;
+    background-color: blueviolet;
+    border: none;
+    margin-left: 660px;
+    font-size: x-large;
+}
 
 
+
+#signupbutton:hover{
+    background-color:purple;
+    color: whitesmoke;
+   
+}
+#tekst2{
+    color: black;
+    text-align: center;
+    
+    font-size: xx-large;
+    padding-top: 25%;
+}
  
