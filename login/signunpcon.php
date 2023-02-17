@@ -36,5 +36,23 @@ if(mysql_num_rows($result)==1){
 */
 
 $conn=mysql_connect("localhost","root","","data");
- 
+
+
+require'signunpcon.php';
+
+if(isset($_POST['submit'])){ 
+	
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	$email = $_POST['email'];
+	$shteti = $_POST['shteti'];
+	$mbiemri=$_POST['mbiemri'];
+	$emri=$_POST['emri'];
+}
+$query="INSERT INTO moviepagetable VALUES('','$username','$password','$email','$shteti','$mbiemri','$emri'
+mysqli_query($conn,$query);
+echo'uboooo';
+
+
 ?>
+ 
