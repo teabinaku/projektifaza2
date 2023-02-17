@@ -106,24 +106,7 @@ function signup(){
 		}
 	}
 
-<?php
-require'signunpcon.php';
-
-if(isset($_POST['submit'])){ 
-	
-	$username = $_POST['username'];
-	$password = $_POST['password'];
-	$email = $_POST['email'];
-	$shteti = $_POST['shteti'];
-	$mbiemri=$_POST['mbiemri'];
-	$emri=$_POST['emri'];
-}
-$query="INSERT INTO moviepagetable VALUES('','$username','$password','$email','$shteti','$mbiemri','$emri'
-mysqli_query($conn,$query);
-echo'uboooo';
-
-
-?>
+*/
 
 <!DOCTYPE html>
 <html>
@@ -134,11 +117,11 @@ echo'uboooo';
 </head>
 
 <body style="background-color: black;">
-	<form action="./loginfinal.html">
+	<form action="./loginfinal.php">
 	<div id="div1">
 		<button class="fonti">Login</button>
 	</form>
-	<form action="./signuph.html">
+	<form action="./signuph.php">
 		<button class="fonti">Sign up</button>
 	</form>
 	</div>

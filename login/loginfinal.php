@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,10 +10,10 @@
 
 <body style="background-color: black;">
 	<div id="div1">
-		<form action="./loginfinal.html">
+		<form action="./loginfinal.php">
 		<button class="fonti">Login</button>
 	</form>
-	<form action="./signuph.html">
+	<form action="./signuph.php">
 		<button class="fonti">Sign up</button>
 	</form>
 	</div>
