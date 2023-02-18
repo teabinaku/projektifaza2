@@ -17,16 +17,16 @@
             </div>
             <div class="menu-container">
                 <ul class="menu-list">
-                  <form action="index.php">
+                  <form action="../Main page/index.php">
                      <li class="menu-list-item active"><button class="seriale">Home</button></li>
                     </form>
-                    <form action="movies.php" >
+                    <form action="../Movies/movies.php" >
                     <li class="menu-list-item" ><button class="seriale">Movies</button></li>
                   </form>
-                    <form action="series.php">
+                    <form action="../Series/series.php">
                     <li class="menu-list-item"><button class="seriale">Series</button></li>
                     </form>
-                    <form action="aboutus.php">
+                    <form action="../About us/aboutus.php">
                     <li class="menu-list-item" ><button class="seriale">About us</button></li>
                   </form>
                    
@@ -35,7 +35,7 @@
             </div>
             <input  id="tea" ;type="text"placeholder="Kerko.." name="search">
     <button id="butoni2" ><img src="./searchpurple.png" id="avatar2"></button>
-    <form action="profili.php">
+    <form action="../profili/profilii.php">
     <button id="butoni"> <img  src="./avatar test.webp" id="avatar"></button>
     </form>
 
