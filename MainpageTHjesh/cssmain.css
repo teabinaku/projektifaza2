@@ -23,25 +23,6 @@
     
     font-family: "Sen", sans-serif;
     }
-    .movie-list-item-button1{
-        background-color: blueviolet;
-        color:white;
-        border-radius: 10px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        position: absolute;
-        bottom: 20px;
-        left: 50px;
-        margin-left: 2.3cm;
-        padding: 10px;
-    
-    
-    
-        
-    
-        }
-        
     
     .logo-container {
     flex: 1;
@@ -213,6 +194,24 @@
     left: 50px;
     opacity: 0;
     transition: 1s all ease-in-out;
+    }
+   .movie-list-item-button1{
+    background-color: blueviolet;
+    color:white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    margin-left: 2.3cm;
+    padding: 10px;
+
+
+
+    
+
     }
     
     .arrow {

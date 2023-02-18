@@ -8,6 +8,7 @@
 </head>
 
 
+
 <body style="background-color:blueviolet">
     <div class="navbar">
         <div class="navbar-container">
@@ -16,16 +17,16 @@
             </div>
             <div class="menu-container">
                 <ul class="menu-list">
-                  <form action="../Main page/index.html">
+                  <form action="index.php">
                      <li class="menu-list-item active"><button class="seriale">Home</button></li>
                     </form>
-                    <form action="../Movies/movies.html" >
+                    <form action="movies.php" >
                     <li class="menu-list-item" ><button class="seriale">Movies</button></li>
                   </form>
-                    <form action="../Series/series.html">
+                    <form action="series.php">
                     <li class="menu-list-item"><button class="seriale">Series</button></li>
                     </form>
-                    <form action="../About us/aboutus.html">
+                    <form action="aboutus.php">
                     <li class="menu-list-item" ><button class="seriale">About us</button></li>
                   </form>
                    
@@ -34,7 +35,7 @@
             </div>
             <input  id="tea" ;type="text"placeholder="Kerko.." name="search">
     <button id="butoni2" ><img src="./searchpurple.png" id="avatar2"></button>
-    <form action="../profili/profili.html">
+    <form action="profili.php">
     <button id="butoni"> <img  src="./avatar test.webp" id="avatar"></button>
     </form>
 

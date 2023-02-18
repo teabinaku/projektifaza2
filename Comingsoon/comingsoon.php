@@ -19,16 +19,16 @@
             </div>
             <div class="menu-container">
                 <ul class="menu-list">
-                  <form action="../Main page/index.php">
+                  <form action="index.php">
                      <li class="menu-list-item active"><button class="seriale">Home</button></li>
                     </form>
-                    <form action="../Movies/movies.html" >
+                    <form action="movies.php" >
                     <li class="menu-list-item" ><button class="seriale">Movies</button></li>
                   </form>
-                    <form action="../Series/series.html">
+                    <form action="series.php">
                     <li class="menu-list-item"><button class="seriale">Series</button></li>
                     </form>
-                    <form action="../About us/aboutus.html">
+                    <form action="aboutus.php">
                     <li class="menu-list-item" ><button class="seriale">About us</button></li>
                   </form>
                    
@@ -38,7 +38,7 @@
   
             <input  id="tea" ;type="text"placeholder="Kerko.." name="search">
             <button id="butoni2" ><img src="./searchpurple.png" id="avatar2"></button>
-            <form action="../profili/profili.html">
+            <form action="profili.php">
             <button id="butoni"> <img  src="./avatar test.webp" id="avatar"></button>
             </form>
                     
@@ -48,13 +48,9 @@
         </div>
     </div>
     
-    <div >
-        <p id="tekst2"><b>Opss...per te perdorur sherbimet tone ju duheni te kyceni...</b></p>
+    <div id="soon">
+        <p id="tekst"><b>Coming very soon...</b></p>
     </div>
-    <form action="../login/signuph.php">
-    <button id="signupbutton">Sign up here!</button>
-</form>
-
 
 
 

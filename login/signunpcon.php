@@ -37,7 +37,6 @@ if(mysql_num_rows($result)==1){
 
 $conn=mysql_connect("localhost","root","","data");
 
-
 require'signunpcon.php';
 
 if(isset($_POST['submit'])){ 
@@ -49,10 +48,12 @@ if(isset($_POST['submit'])){
 	$mbiemri=$_POST['mbiemri'];
 	$emri=$_POST['emri'];
 }
-$query="INSERT INTO moviepagetable VALUES('','$username','$password','$email','$shteti','$mbiemri','$emri'
+$query="INSERT INTO moviepagetable VALUES('','$username','$password','$email','$shteti','$mbiemri','$emri');
 mysqli_query($conn,$query);
 echo'uboooo';
 
 
 ?>
+
+
  
