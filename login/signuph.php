@@ -1,10 +1,32 @@
 
 			<?php
-require('./signuphcon.php');
+require('./signunpcon.php');
 if(isset($_POST['submit1'])){
-	echo'O TU BOOO';
+	$emri=$_POST['emri'];
+	$mbiemri=$_POST['mbiemri'];
+	$username=$_POST['username'];
+	$password=$_POST['password'];
+	$nrtel=$_POST['nrtel'];
+	$email=$_POST['email'];
+	$shteti=$_POST['shteti'];
+	$tipi=$_POST['tipi'];
+	if(!empty($_POST['emri']) && !empty($_POST['mbiemri']) && !empty($_POST['username'])   && !empty($_POST['password'])  && !empty($_POST['nrtel']) && !empty($_POST['email']) && !empty($_POST['shteti']) && !empty($_POST['tipi']) ){
+	$p=crud::connect()->prepare('INSERT INTO MOVIEPAGEE(emri,mbiemri,username,password,nrtel,email,shteti,tipi)VALUES(:n,:l,:u,:p,"nr,:e,:sh,:t) ');
+   $p->bindvalue(':n',$emri);
+   $p->bindvalue(':l',$mbiemri);
+   $p->bindvalue(':u',$username);
+   $p->bindvalue(':p',$password);
+   $p->bindvalue(':nr',$nrtel);
+   $p->bindvalue(':e',$email);
+   $p->bindvalue(':sh',$shteti);
+   $p->bindvalue(':t',$tipi);
+   $p->execute();
 
+}else{
+	echo'Ju nuk i keni plotesuar te gjitha kushtet!';
 }
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -65,6 +87,7 @@ if(isset($_POST['submit1'])){
             <br>
 			<label>Nr.tel:</label>
 			<input name="nrtel";type="tel" placeholder="Ju lutem shkruani numrin kontaktues"  id ="nrtel" class="kushtet">
+			<br>
             <label> Tipi i perdoruesit </label>
 			<input name = "tipi"; type = "text" placeholder = "Admin/Perdorues i thjeshte" id= "Tipid_ID" class = "kushtet">
            
