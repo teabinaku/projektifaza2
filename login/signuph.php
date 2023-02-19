@@ -66,7 +66,10 @@ if(isset($_POST['submit1'])){
 			<label>Nr.tel:</label>
 			<input name="nrtel";type="tel" placeholder="Ju lutem shkruani numrin kontaktues"  id ="nrtel" class="kushtet">
             <label> Tipi i perdoruesit </label>
-			<input name = "tipi"; type = "text" placeholder = "Admin/Perdorues i thjeshte" id= "Tipid_ID" class = "kushtet">
+			<select>
+				<option> Choose an Option! </option>
+				<option value ="Perdorues i thjeshte"> Perdorues i thjeshte </option>
+				<option value = "Admin"> Admin </option>
            
 	<div class = "login"> 
 		
