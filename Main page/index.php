@@ -3,7 +3,9 @@
 <head>
    
     <title>Admin</title>
-    <link rel="stylesheet" href="cssmain.css">
+    <!--<link rel="stylesheet" href="cssmain.css">--> 
+    <link rel="stylesheet" href="cssmain.css?v=<?php echo time(); ?>">
+
 
 </head>
 <body style="background-color:black;">
@@ -49,7 +51,8 @@
     <div class="container">
         
             <div class="featured-content" >
-                <img class="featured-title" id="slideshow" >
+            <img class="featured-title" id="slideshow" >
+                
                 
                 
               
@@ -297,7 +300,7 @@
     
 </body>
 
-<script src="./mainpage.js"></script>
+<script src="mainpage.js"></script>
 
 
 
