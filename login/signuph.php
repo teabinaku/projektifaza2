@@ -26,9 +26,11 @@
 			<img src="5087579.png" >
 
 		
-			<!--
-			/*
+			
+			<?php
+
 require('./signunpcon.php');
+/*
 if(isset($_POST['submit1'])){
 	$emri=$_POST['emri'];
 	$mbiemri=$_POST['mbiemri'];
@@ -52,9 +54,11 @@ if(isset($_POST['submit1'])){
    $p->execute();
 
 }else{
-	header(Location:'indexthjesht.php');
+	header('Location:inde.php');
 }
-}*/-->
+}
+*/
+?>
 
 
 <form action="signunpcon.php" method="post">

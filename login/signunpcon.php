@@ -35,7 +35,7 @@ if(mysql_num_rows($result)==1){
  }
 
 
-/*$conn=mysql_connect("localhost","root","","data");
+$conn=mysql_connect("localhost","root","","data");
 
 require'signunp.php';
 
@@ -52,17 +52,17 @@ $query="INSERT INTO moviepagetable VALUES('$emri, $mbiemri,$username, $password,
 mysqli_query($conn,$query);
 echo'uboooo';
 
--->
 
-<?php
-/*
+
+
+
 
  class crud{
 	public static function connect(){
 		try{
 
 		
-		$con=new PDO('mysql:localhost=host;dbname=CRUD','root','');
+		$con=new PDO('mysql:localhost=host;dbname=CRUD','sa','');
 		return $con;
 		}catch(PDOexception $error1){
 			echo'Something went wrong ->Database error '.$error1->getMessage();
@@ -72,6 +72,7 @@ echo'uboooo';
 	}
 
 }
+
 
 Class dbCon{
 private $conn = null;
@@ -141,12 +142,30 @@ if(!empty($username)){
 	}
 }
 }
-*/
+
 
 
 
 
 
 ?>
-
+*/
  
+
+
+<?php
+
+$hostname = "localhost";
+$username= "sa";
+$password = "";
+$db_name = "project";
+
+$connect = mysqli_connect($hostname, $username, $password, $db_name);
+
+			
+if (!$connect){
+	echo "Connection failed!";
+}
+
+?>
+?>
