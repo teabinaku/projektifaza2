@@ -1,10 +1,10 @@
 var i = 0;
 var imgArray = [
-"/Users/apple/Desktop/projektifinal/Main page/intestellar23.jpeg",
-"/Users/apple/Desktop/projektifinal/Main page/batman23.jpeg",
-"/Users/apple/Desktop/projektifinal/Main page/avatar23.jpeg",
-"/Users/apple/Desktop/projektifinal/Main page/moonfall23.jpeg",
-"/Users/apple/Desktop/projektifinal/Main page/starwars23.jpeg"
+"/Applications/XAMPP/xamppfiles/htdocs/projektifaza2/Main page/batman23.jpeg",
+"/Applications/XAMPP/xamppfiles/htdocs/projektifaza2/Main page/starwars23.jpeg",
+"/Applications/XAMPP/xamppfiles/htdocs/projektifaza2/Main page/moonfall23.jpeg",
+"/Applications/XAMPP/xamppfiles/htdocs/projektifaza2/Main page/intestellar23.jpeg",
+"/Applications/XAMPP/xamppfiles/htdocs/projektifaza2/Main page/avatar23.jpeg"
 
 ];
 function ndrroImg() {

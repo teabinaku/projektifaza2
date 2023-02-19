@@ -14,7 +14,7 @@
             </div>
             <div class="menu-container">
                 <ul class="menu-list">
-                  <form action="../Main page/index.html">
+                  <form action="../Main page/index.php">
                      <li class="menu-list-item active"><button class="seriale">Home</button></li>
                     </form>
                     <form action="../Movies/movies.php" >
@@ -50,6 +50,8 @@
         
             <div class="featured-content" >
                 <img class="featured-title" id="slideshow" >
+                
+                
               
               
             </div>
