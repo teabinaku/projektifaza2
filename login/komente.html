@@ -1,0 +1,109 @@
+<!--
+/*
+require("signup.html");
+
+class Klient{
+    public $user;
+    public $pass;
+    public $email;
+    public $nrtel;
+    public $mosha;
+    public $shteti;
+
+
+    this->username=$user;
+    this->password=$pass;
+    this->email=$email;
+    this->nrtel=$nrtel;
+    this->shteti=$shteti;
+  }
+  public function getusername(){
+     return this->username=$user;
+  }
+  public function setusername($newusername){
+    this->username=$newusername;
+  }
+
+  public function getpassword(){
+    return this->password=$pass;
+
+  }
+  public function setpassword($newpassword){
+    this->password=$newpassword;
+  }
+  public function getemail(){
+    return this->email=$email;
+
+  }
+  public function setemail($newemail){
+    this->email=$newemail;
+
+  }
+  public function getnrtel(){
+    return this->email=$email;
+  }
+  public  function setnrtel($newnrtel){
+    this->nrtel=$nrtel;
+  }
+  public  function  getshteti(){
+    return this->shteti=$shteti;
+  }
+  public function setshteti($newshteti){
+    this->shteti=$newshteti;
+  }
+  public function  toString(){
+    return 'Perdoruesi me emer'.$this->username .'-me email'.$this->email;
+  }
+}
+ var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var nrtel = document.getElementById("nrtel").value;
+    var shteti = document.getElementById("shteti").value;
+    var emri = document.getElementById("emri").value;
+    var mbiemri = document.getElementById("mbiemri").value;
+    var mosha = document.getElementById("mosha").value;
+
+function signup(){
+	if(isset($_POST['submit']) { 
+	
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	$email = $_POST['email'];
+	$shteti = $_POST['shteti'];
+	$mbiemri=$_POST['mbiemri'];
+	$emri=$_POST['emmri'];
+	
+	}else{
+	  echo'Ju nuk keni shtypur butonin per tu rregjistruar'
+	}
+	}
+	*/
+	$host='localhost';
+	$user='sa';
+	$password="";
+	$db='demo';
+
+	mysql_connect($host,$user,$password);
+	mysql_select_db($db);
+	if(isset($_POST['submit'])){ 
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	$email = $_POST['email'];
+	$shteti = $_POST['shteti'];
+	$mbiemri=$_POST['mbiemri'];
+	$emri=$_POST['emri'];
+	
+	$sql='Select * from loginform where user='".$emri."' AND password ".$password."limit 1";
+	$result=mysql_query($sql);
+
+	if(mysql_num_rows($result)==1){
+		echo'You have succesfullu loged in';
+		exit();
+
+	
+	}else{
+		echo'You have not acessed the site'
+		}
+	}
+
+-->

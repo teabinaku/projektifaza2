@@ -1,4 +1,12 @@
 
+<?php
+require('./signupcon.php');
+if(isset($_POST['loginsubmit'])){
+	$_SESSION['validate']=false;
+
+}
+
+?>
 
 <!DOCTYPE html>
 <html>
@@ -26,7 +34,7 @@
 		<div class="Klasa2">
 			
 			
-<form action="login.php" method="POST">
+<form action="signupcon.php" method="POST">
 			<label>Username:</label>
 			
 			<input type="text" placeholder="Ju lutem shkruani username"  id ="email" class="kushtet">
@@ -38,7 +46,7 @@
            
 	<div class = "login"> 
 		
-			<button type ="submit" >Login In </button>
+			<button id="loginsubmit"type ="submit" >Login In </button>
 			<br>
 			</form>
 			<form action="../MainpageTHjesh/indexthjesht.php">
