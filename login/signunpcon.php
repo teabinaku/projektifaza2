@@ -165,7 +165,7 @@ echo'uboooo';
 >>>>>>> Stashed changes
 
 
-class crud{
+<!-- class crud{
 	public function connect(){
 		try{
 
@@ -182,4 +182,4 @@ class crud{
 }
 
  
-?>
+?> -->

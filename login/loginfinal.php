@@ -26,7 +26,7 @@
 		<div class="Klasa2">
 			
 			
-<form action="login.php" method="POST">
+<form action="loginfinal.php" method="POST">
 			<label>Username:</label>
 			
 			<input type="text" placeholder="Ju lutem shkruani username"  id ="email" class="kushtet">
