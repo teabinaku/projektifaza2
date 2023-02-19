@@ -33,11 +33,11 @@ if(mysql_num_rows($result)==1){
  }else{
     echo'You do not have access to the main page';
  }
-*/
+
 
 $conn=mysql_connect("localhost","root","","data");
 
-require'signunpcon.php';
+require'signunp.php';
 
 if(isset($_POST['submit'])){ 
 	
@@ -54,6 +54,24 @@ echo'uboooo';
 
 
 ?>
+*/
 
+
+class crud{
+	public function connect(){
+		try{
+
+		
+		$con=new PDO('mysql:localhost;dbname=CRUD','root','');
+		return $con;
+		}catch(PDOexception $error1){
+			echo'Something went wrong ->Database error '.$error1->getMessage();
+		}catch(Exception $error2){
+			echo'Something went wrong ->'.$error2->getMessage();
+		}
+	}
+
+}
 
  
+?>

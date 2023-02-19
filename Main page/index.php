@@ -69,21 +69,10 @@
     </div>
    
     <div class="container">
-        
-    <div id="slider">
-  <?php foreach ($images as $image) { ?>
-    <img src="<?php echo $image; ?>" />
-  <?php } ?>
-      </div>
 
-           <!-- <div class="featured-content" >
+           <div class="featured-content" >
             <img class="featured-title" id="slideshow" -->
-                
-                
-                
-              
-              
-            </div>
+ </div>
             <div class="movie-list-container">
                 <h1 class="movie-list-title">Filmat me te shikuar</h1>
                 <div class="movie-list-wrapper">
@@ -326,25 +315,7 @@
     
 </body>
 
-<!-- <script src="mainpage.js"></script> -->
-<script> var images = document.querySelectorAll('#slider img');
-var currentIndex = 0;
-
-function showImage(index) {
-  images[currentIndex].classList.remove('active');
-  images[index].classList.add('active');
-  currentIndex = index;
-}
-
-setInterval(function() {
-  var newIndex = currentIndex + 1;
-  if (newIndex >= images.length) {
-    newIndex = 0;
-  }
-  showImage(newIndex);
-}, 5000);
-  </script>
-
+ <script src="mainpage.js"></script> -->
 
 
 </html>
