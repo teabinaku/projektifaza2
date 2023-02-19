@@ -34,7 +34,7 @@ if(isset($_POST['loginsubmit'])){
 		<div class="Klasa2">
 			
 			
-<form action="signupcon.php" method="POST">
+<form action="signupconfinal.php" method="POST">
 			<label>Username:</label>
 			
 			<input type="text" placeholder="Ju lutem shkruani username"  id ="email" class="kushtet">
