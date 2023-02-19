@@ -5,7 +5,7 @@
 	<head>
 	<title>WEBMOVIE</title>
 
-	<link rel="stylesheet" href="signup.css">
+	<link rel="stylesheet" href="signup.css?v=<?php echo time(); ?>">
 </head>
 
 <body style="background-color: black;">

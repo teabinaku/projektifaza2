@@ -4,7 +4,7 @@
 <head>
    
     <title>Perdorues i thjeshte</title>
-    <link rel="stylesheet" href="cssmain.css">
+    <link rel="stylesheet" href="cssmain.css?v=<?php echo time(); ?>">
 
 </head>
 <body style="background-color:black;">

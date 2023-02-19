@@ -44,14 +44,7 @@
             </div>
         </div>
     </div>
-    <div id="firstdiv">
-    <p id="tekst2"><h1>
-        WEBMOVIE është një faqe filmash me shërbime 24 orë ku mund të gjeni filmat, serialet dhe dokumentarët më të fundit.
-        Faqja jonë mbulon një shumëllojshmëri filmash duke filluar nga zhanri horror,komedi,dramë,aksion,romancë dhe fantazi.
-        Shërbimet tona janë falas për të gjithë dhe juve ju duhet vetëm të qaseni në llogarinë tuaj  për të pasur mundësinë e shikimit të filmave në cdo orë dhe në cdo moment të ditës! </h1></p>
-        <br> 
-    <h1>&#128578</h1>
-    </div>
+    
 
 
   <div id = "contactform">
@@ -82,7 +75,14 @@
      </div>
    
 
-   
+     <div id="firstdiv">
+    <p id="tekst2"><h1>
+        WEBMOVIE është një faqe filmash me shërbime 24 orë ku mund të gjeni filmat, serialet dhe dokumentarët më të fundit.
+        Faqja jonë mbulon një shumëllojshmëri filmash duke filluar nga zhanri horror,komedi,dramë,aksion,romancë dhe fantazi.
+        Shërbimet tona janë falas për të gjithë dhe juve ju duhet vetëm të qaseni në llogarinë tuaj  për të pasur mundësinë e shikimit të filmave në cdo orë dhe në cdo moment të ditës! </h1></p>
+        <br> 
+    
+    </div>
 
 </body>
 <script src="./aboujs.js">

@@ -114,12 +114,13 @@ function signup(){
 	<head>
 	<title>WEBMOVIE</title>
 
-	<link rel="stylesheet" href="signup.css">
+	<link rel="stylesheet" href="signup.css?v=<?php echo time(); ?>">
 </head>
 
 <body style="background-color: black;">
-	<form action="./loginfinal.php">
+	
 	<div id="div1">
+	<form action="./loginfinal.php">
 		<button class="fonti">Login</button>
 	</form>
 	<form action="./signuph.php">
