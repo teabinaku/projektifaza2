@@ -65,12 +65,12 @@ if(isset($_POST['submit1'])){
             <br>
 			<label>Nr.tel:</label>
 			<input name="nrtel";type="tel" placeholder="Ju lutem shkruani numrin kontaktues"  id ="nrtel" class="kushtet">
-            <label> Tipi i perdoruesit </label>
+            <label> Tipi i perdoruesit: </label>
 			<select>
 				<option> Choose an Option! </option>
 				<option value ="Perdorues i thjeshte"> Perdorues i thjeshte </option>
 				<option value = "Admin"> Admin </option>
-           
+</select>
 	<div class = "login"> 
 		
 			<button name="submit1"type ="submit" >Sign UP </button>
@@ -78,6 +78,7 @@ if(isset($_POST['submit1'])){
          </form>
 			<form action="../MainpageTHjesh/indexthjesht.php">
 			<button  name="submit"type ="submit" >Vazhdo si perdorues i thjeshte </button>
+
             </form>
 		
 			</div>
