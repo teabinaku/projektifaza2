@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profili</title>
-    <link rel="stylesheet" href="profilicss.css">
+    <link rel="stylesheet" href="profilicss.css?v=<?php echo time(); ?>">
 </head>
 <body style="background-color: blueviolet;">
     <div class="navbar">
@@ -46,6 +46,7 @@
     <div id="divipar">
         <img src="./User-Avatar-Profile-Transparent-Isolated-PNG.png" id="avatar3">
         
+        
       <div id="dividyt">
             <span class="info">Username:</span>
             <span class="info">Emri:</span>
@@ -55,6 +56,12 @@
             <span class="info">Shteti:</span>
             <span class="info">Nr.tel:</span>
         </div>
+        
+            
+</div>
+<div id="dowload">
+    <p id="down">Filmat e dowloaduar:</p>
+</div>
             
   
 

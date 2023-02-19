@@ -176,3 +176,17 @@
     border-radius: 23px;
 
 }
+#dowload{
+    background-color: rgb(24,24,24);
+    height: 8cm;
+    border-radius: 25px;
+    margin-left: 3cm;
+    margin-right: 6cm;
+    margin-top: -9cm;
+}
+#down{
+    font-size: xx-large;
+    color: blueviolet;
+    padding: 30px;
+}
+
