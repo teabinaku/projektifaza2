@@ -39,8 +39,11 @@
 	<div class = "login"> 
 		
 			<button type ="submit" >Login In </button>
-			
+			<form action="../MainpageTHjesh/indexthjesht.php">
+			<button  name="submit"type ="submit" >Vazhdo si perdorues i thjeshte </button>
+            </form>
 		
+		 
 			</div>
 			
             </div>

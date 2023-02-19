@@ -48,7 +48,7 @@ if(isset($_POST['submit'])){
 	$mbiemri=$_POST['mbiemri'];
 	$emri=$_POST['emri'];
 }
-$query="INSERT INTO moviepagetable VALUES('','$username','$password','$email','$shteti','$mbiemri','$emri');
+$query="INSERT INTO moviepagetable VALUES('$emri, $mbiemri,$username, $password,$email,$shteti,$tipi');
 mysqli_query($conn,$query);
 echo'uboooo';
 

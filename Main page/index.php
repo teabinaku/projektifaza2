@@ -1,3 +1,22 @@
+
+<? php 
+
+  $images = array(
+"Interstellar_logo.png",
+    "starwars23.jpeg",
+    "moonfall23.jpeg",
+    "interstellar23.jpeg",
+    "avatar23.jpeg",
+  );
+
+
+
+
+
+
+
+
+?>
 <!DOCTYPE html>
 <html >
 <head>
@@ -37,6 +56,7 @@
            
             
             </div>
+
             <input  id="tea" ;type="text"placeholder="Kerko.." name="search">
             <button id="butoni2" ><img src="./searchpurple.png" id="avatar2"></button>
             <form action="../profili/profilii.php">
@@ -50,8 +70,14 @@
    
     <div class="container">
         
-            <div class="featured-content" >
-            <img class="featured-title" id="slideshow" >
+    <div id="slider">
+  <?php foreach ($images as $image) { ?>
+    <img src="<?php echo $image; ?>" />
+  <?php } ?>
+      </div>
+
+           <!-- <div class="featured-content" >
+            <img class="featured-title" id="slideshow" -->
                 
                 
                 
@@ -300,7 +326,24 @@
     
 </body>
 
-<script src="mainpage.js"></script>
+<!-- <script src="mainpage.js"></script> -->
+<script> var images = document.querySelectorAll('#slider img');
+var currentIndex = 0;
+
+function showImage(index) {
+  images[currentIndex].classList.remove('active');
+  images[index].classList.add('active');
+  currentIndex = index;
+}
+
+setInterval(function() {
+  var newIndex = currentIndex + 1;
+  if (newIndex >= images.length) {
+    newIndex = 0;
+  }
+  showImage(newIndex);
+}, 5000);
+  </script>
 
 
 

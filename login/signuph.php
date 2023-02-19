@@ -166,11 +166,12 @@ function signup(){
             <br>
 			<label>Nr.tel:</label>
 			<input name="nrtel";type="tel" placeholder="Ju lutem shkruani numrin kontaktues"  id ="nrtel" class="kushtet">
-
+            <label> Tipi i perdoruesit </label>
+			<input name = "tipi"; type = "text" placeholder = "Admin/Perdorues i thjeshte" id= "Tipid_ID" class = "kushtet">
            
 	<div class = "login"> 
 		
-			<button  name="submit"type ="submit" >Sign UP </button>
+			<button <?php onclick ="insert()" ?> name="submit"type ="submit" >Sign UP </button>
 			<br>
          </form>
 			<form action="../MainpageTHjesh/indexthjesht.php">
