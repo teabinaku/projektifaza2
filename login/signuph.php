@@ -171,7 +171,11 @@ function signup(){
 	<div class = "login"> 
 		
 			<button  name="submit"type ="submit" >Sign UP </button>
-		
+			<br>
+         </form>
+			<form action="../MainpageTHjesh/indexthjesht.php">
+			<button  name="submit"type ="submit" >Vazhdo si perdorues i thjeshte </button>
+            </form>
 		
 			</div>
 			
