@@ -2,11 +2,7 @@
 <? php 
 
   $images = array(
-"Interstellar_logo.png",
-    "starwars23.jpeg",
-    "moonfall23.jpeg",
-    "interstellar23.jpeg",
-    "avatar23.jpeg",
+  "doctorstrange.jpeg",
   );
 
 
@@ -315,7 +311,29 @@
     
 </body>
 
+<<<<<<< Updated upstream
  <script src="mainpage.js"></script> -->
+=======
+<!-- <script src="mainpage.js"></script> -->
+<script> var images = document.querySelectorAll('#slider img');
+var currentIndex = 0;
+
+function ndrroImg(index) {
+  images[currentIndex].classList.remove('active');
+  images[index].classList.add('active');
+  currentIndex = index;
+}
+
+setInterval(function() {
+  var newIndex = currentIndex + 1;
+  if (newIndex >= images.length) {
+    newIndex = 0;
+  }
+  ndrroImg(newIndex);
+}, 5000);
+  </script>
+
+>>>>>>> Stashed changes
 
 
 </html>
