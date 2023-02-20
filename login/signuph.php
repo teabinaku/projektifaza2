@@ -1,5 +1,28 @@
 
+<?php
+require('signunpcon.php');
+session_start();
+if(isset($_SESSION['user'])){
+	header("location:index.php");
+}
+if(isset($_REQUEST['submit1'])){
+	$emri=$_REQUEST['emri'];
+	$mbiemri=$_REQUEST['mbiemri'];
+	$username=$_REQUEST['username'];
+	$password=$_REQUEST['password'];
+	$nrtel=$_REQUEST['nrtel'];
+	$email=$_REQUEST['email'];
+	$shteti=$_REQUEST['shteti'];
+	$tipi=$_REQUEST['tipi'];
 
+	if(empty($emri)){
+		$errorMsg[0][1]='Name required'
+	}
+
+
+	
+}
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -27,10 +50,8 @@
 
 		
 			
-			<?php
 
-require('./signunpcon.php');
-/*
+<!--
 if(isset($_POST['submit1'])){
 	$emri=$_POST['emri'];
 	$mbiemri=$_POST['mbiemri'];
@@ -58,7 +79,7 @@ if(isset($_POST['submit1'])){
 }
 }
 */
-?>
+-->
 
 
 <form action="signunpcon.php" method="post">

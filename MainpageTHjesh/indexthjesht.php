@@ -51,7 +51,12 @@
     <div class="container">
         
             <div class="featured-content" >
-                <img class="featured-title" id="slideshow" >
+            <div class="container">
+  <img class='photo' s src="./avatar23.jpeg" alt="Image 1" />
+  <img class='photo'  src="./batman23.jpeg" alt="Image 2" />
+  <img class='photo'  src="./moonfall23.jpeg" alt="Image 3" />
+  <img class='photo'  src="./intestellar23.jpeg" alt="Image 4" />
+</div>
               
             </div>
             <div class="movie-list-container">

@@ -149,11 +149,11 @@ if(!empty($username)){
 
 
 ?>
-*/
+
  
 
 
-<?php
+
 
 $hostname = "localhost";
 $username= "sa";
@@ -168,4 +168,17 @@ if (!$connect){
 }
 
 ?>
+?>*/
+<?php
+ $db_host="localhost";
+ $db_user="root";
+ $db_password="tearoot123";
+ $db_name="CRUD";
+
+ try{
+	$db=new PDO("mysql:host={$db_host};dbnamea={$db_name},$db_user,$db_password");
+    $db->setAttribute(PDO::ATTR_ERRMODE,PDO::EERMODE_EXCEPTION);
+ }catch(PODEXCEPTION $e){
+	echo$e->getMessage();
+ }
 ?>
