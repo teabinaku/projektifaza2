@@ -16,7 +16,7 @@
 	<form action="./loginfinal.php">
 		<button class="fonti">Login</button>
 	</form>
-	<form action="./signuph.php">
+	<form action="./signupcon.php">
 		<button class="fonti">Sign up</button>
 	</form>
 	</div>
@@ -25,58 +25,28 @@
 			<span id="login">Sign up</span>
 			<img src="5087579.png" >
 
-		
-			<!--
-			/*
-require('./signunpcon.php');
-if(isset($_POST['submit1'])){
-	$emri=$_POST['emri'];
-	$mbiemri=$_POST['mbiemri'];
-	$username=$_POST['username'];
-	$password=$_POST['password'];
-	$nrtel=$_POST['nrtel'];
-	$email=$_POST['email'];
-	$shteti=$_POST['shteti'];
-	$tipi=$_POST['tipi'];
-	if(!empty($_POST['emri']) && !empty($_POST['mbiemri']) && !empty($_POST['username'])   && !empty($_POST['password'])  && !empty($_POST['nrtel']) && !empty($_POST['email']) && !empty($_POST['shteti']) && !empty($_POST['tipi']) ){
-	$p=crud::connect()->prepare('INSERT INTO MOVIEPAGEE(emri,mbiemri,username,password,nrtel,email,shteti,tipi)VALUES(:n,:l,:u,:p,:m,"nr,:e,:sh,:t) ');
-   $p->bindvalue(':n',$emri);
-   $p->bindvalue(':l',$mbiemri);
-   $p->bindvalue(':u',$username);
-   $p->bindvalue(':p',$password);
- 
-   $p->bindvalue(':nr',$nrtel);
-   $p->bindvalue(':e',$email);
-   $p->bindvalue(':sh',$shteti);
-   $p->bindvalue(':t',$tipi);
-   $p->execute();
-
-}else{
-	header(Location:'indexthjesht.php');
-}
-}*/-->
-
+	
 
 <form action="signunpcon.php" method="post">
 		<div class="Klasa2">
 			<label >Emri:</label>
-			<input  name="emri";type="text" placeholder="Ju lutem shkruani emrin"  id ="emri" class="kushtet">
+			<input type="text";name="emri" placeholder="Ju lutem shkruani emrin"  id ="emri" class="kushtet">
             <br>
 			<label>Mbiemri:</label>
-			<input name="mbiemri"; type="text" placeholder="Ju lutem shkruani Mbiemrin"  id ="mbiemri" class="kushtet">
+			<input type="text"; name="mbiemri" placeholder="Ju lutem shkruani Mbiemrin"  id ="mbiemri" class="kushtet">
             <br>
 			
 
 			<label>Username:</label>
 			
-			<input name="username";type="text" placeholder="Ju lutem shkruani username"  id ="email" class="kushtet">
+			<input type="username";name="text" placeholder="Ju lutem shkruani username"  id ="email" class="kushtet">
             <br>
 			<label>Email:</label>
-			<input name="email";type="email" placeholder="Ju lutem shkruani emailen tuaj"  id ="email" class="kushtet">
+			<input type="email";name="email" placeholder="Ju lutem shkruani emailen tuaj"  id ="email" class="kushtet">
             <br>
             
 			<label>Password:</label>
-			<input name="password";type ="password" placeholder="Ju lutem shkruani passwordin" id="password" class="kushtet">
+			<input type="password";name ="password" placeholder="Ju lutem shkruani passwordin" id="password" class="kushtet">
             <br>
 			
 			<label>Shteti:</label>
@@ -116,6 +86,9 @@ if(isset($_POST['submit1'])){
 
 
 </body>
+
+
+
 </html>
 
 	

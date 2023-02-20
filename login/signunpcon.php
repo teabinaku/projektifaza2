@@ -1,152 +1,57 @@
+<?php
+include 'signuph.php';
+
+$servername = "localhost";
+ $username = "root";
+ $password ;
+$database = "userssignup";
 
 
-
- <!--
-
+$conn = mysqli_connect($localhost, $username, $password, $userssignup);
 
 
- $host="localhost";
- $user="root";
- $password="";
- $db="demo";
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
 
- mysql_connect($host,$user,$password);
- mysql_select_db($db);
-
- if(isset($_POST['submit'])){
-    $emri=$_POST['emri'];
- $mbiemri=$_POST['mbiemri'];
- $username=$_POST['username'];
- $password=$_POST['password'];
- $email=$_POST['email'];
- $shteti=$_POST['shteti'];
-
-$sql="Select * from moviepagetable where emri='".$emri."'AND PASS='".$password"'limit1";
-
-$result=mysql_query($sql);
-if(mysql_num_rows($result)==1){
-    echo'You have access to the main page';
-    exit();
-
-
-   
- }else{
-    echo'You do not have access to the main page';
- }
-
-
-/*$conn=mysql_connect("localhost","root","","data");
-
-require'signunp.php';
-
+ function insert() {
 if(isset($_POST['submit'])){ 
 	
-	$username = $_POST['username'];
-	$password = $_POST['password'];
-	$email = $_POST['email'];
-	$shteti = $_POST['shteti'];
-	$mbiemri=$_POST['mbiemri'];
-	$emri=$_POST['emri'];
+	$emri = $_POST['Emri'];
+	$mbiemri = $_POST['Mbiemri'];
+	$username = $_POST['Username'];
+	$email = $_POST['Email'];
+	$password=$_POST['Password'];
+	$shteti=$_POST['Shteti'];
+	$nrtel = $_POST['Nr_Tel'];
+
+$query="INSERT INTO moviepagetable(Emri, Mbiemri,Username,Email,Password,Shteti,Nr_Tel) VALUES('$emri','$mbiemri','$username','$email','$password','$shteti','$nrtel')";
+if ($sql = $this->conn->query($query)) {
+	echo "<script>alert('records added successfully');</script>";
+	echo "<script>window.location.href = 'signuph.php';</script>";
+}else{
+	echo "<script>alert('failed');</script>";
+	echo "<script>window.location.href = 'signuph.php';</script>";
+	
 }
-$query="INSERT INTO moviepagetable VALUES('$emri, $mbiemri,$username, $password,$email,$shteti,$tipi');
-mysqli_query($conn,$query);
-echo'uboooo';
+}
+  }
 
--->
-
-<?php
-/*
-
- class crud{
-	public static function connect(){
-		try{
-
-		
-		$con=new PDO('mysql:localhost=host;dbname=CRUD','root','');
-		return $con;
-		}catch(PDOexception $error1){
-			echo'Something went wrong ->Database error '.$error1->getMessage();
-		}catch(Exception $error2){
-			echo'Something went wrong ->'.$error2->getMessage();
+ function fetch(){
+	$data = null;
+	$query = "SELECT * FROM moviepagetable";
+	if ($sql = $this->conn->query($query)) {
+		while ($row = mysqli_fetch_assoc($sql)) {
+			$data[] = $row;
 		}
 	}
-
+	return $data;
 }
 
-Class dbCon{
-private $conn = null;
-private $host = 'localhost';
-private $dbname = 'crudtest';
-private $username = 'sa';
-private $password = 'CRUD';
-public function connDB(){
-try {
-$this->conn = new PDO("mysql:host=$this->host;dbname=$this->dbname",
-$this->username, $this->password,
-[PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC]);
-//echo "Lidhja me: {$this->dbname} - {$this->host}: eshte ralizuar me sukses!";
-} catch (PDOException $pdoe) {
- die("Nuk mund të lidhej me bazën e të dhënave {$this->dbname} :" . $pdoe->getMessage());
-}
-return $this->conn;
-}
-}
-----------------
-$emri=filter_input(INPUT_POST,'emri');
-$mbiemri=filter_input(INPUT_POST,'mbiemri');
-$username=filter_input(INPUT_POST,'username');
-$password=filter_input(INPUT_POST,'password');
-$email=filter_input(INPUT_POST,'email');
-$shteti=filter_input(INPUT_POST,'shteti');
-$nrtel=filter_input(INPUT_POST,'nrtel');
-
-if(!empty($username)){
-	if(!empty($password)){
-		if(!empty($username)){
-			if(!empty($password)){
-				if(!empty($email)){
-					if(!empty($shteti)){
-						if(!empty($nrtel)){
-						$host='localhost';
-						$dbusername="root";
-						$dbpassword="";
-						$dbname="CRUD";
-
-						
-						$conn=new mysqli($host,$dbusername,$dbpassword,$dbname);
-						if(mysqli_connect_error()){
-							die('Connect Error('.mysqli_connect_error().')'.mysqli_connect_error());
-						}else{
-							$sql = "INSERT INTO MOVIEPAGEE (`username`,`password`,`email`,`shteti`,`nrtel`) VALUES (' $username ','$password',' $email',' $shteti ',' $nrtel ');";
-						if($conn->quer($sql)){
-							echo'New record is inserted succesfully';
-						}else{
-							echo'ERROR'
-						
-						
-						}
-						$conn->close();
-						
-						
-
-						}
-					}
-
-				}
-
-		}else{
-			echo'Password should not be empty';
-		}
-		}
-	}
-}
-}
-*/
+   ?>
 
 
 
 
 
-?>
-
- 
