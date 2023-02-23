@@ -66,13 +66,15 @@
          </select>
          <br> <br>
          <label class="font" >Email adresa: </label>
-         <input type = "email" id = "email" placeholder="Shkruani email-in tuaj">
+         <input type ="email" id = "email" placeholder ="Shkruani email-in tuaj">
          <br> <br>
          
       <textarea id ="subject"  name ="subject" placeholder="Shkruani nje mesazh" style=" color:palevioletred; height:50px;"></textarea>
-      <br> <br>  <br> <br>
-        <button id ="submit"  onclick="auth(event)"  type = "button" onclick="validoLogin()"> Submit </button>
-     </div>
+      <br>
+     
+        <button type ="submit" id = "submit" name="submit"> Submit </button>
+</form>
+      </div>
    
 
      <div id="firstdiv">
@@ -84,8 +86,9 @@
     
     </div>
 
+
 </body>
-<script src="./aboujs.js">
-    </script>
+
+
 
 </html>
