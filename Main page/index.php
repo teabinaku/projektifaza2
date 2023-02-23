@@ -1,15 +1,16 @@
 
 <? php 
-/*
 
-$images = array(
-    '/Applications/XAMPP/xamppfiles/htdocs/projektifaza2/Main page/avatar23.jpeg',
-    '/Applications/XAMPP/xamppfiles/htdocs/projektifaza2/Main page/batman23.jpeg',
-    '/Applications/XAMPP/xamppfiles/htdocs/projektifaza2/Main page/intestellar23.jpeg',
-    '/Applications/XAMPP/xamppfiles/htdocs/projektifaza2/Main page/moonfall23.jpeg'
+  $images = array(
+  "doctorstrange.jpeg",
   );
 
-*/
+
+
+
+
+
+
 
 ?>
 <!DOCTYPE html>
@@ -66,16 +67,7 @@ $images = array(
     <div class="container">
 
            <div class="featured-content" >
-           <div class="container">
-  <img class='photo' s src="./avatar23.jpeg" alt="Image 1" />
-  <img class='photo'  src="./batman23.jpeg" alt="Image 2" />
-  <img class='photo'  src="./moonfall23.jpeg" alt="Image 3" />
-  <img class='photo'  src="./intestellar23.jpeg" alt="Image 4" />
-</div>
- 
-</div>
-            
-          
+            <img class="featured-title" id="slideshow" -->
  </div>
             <div class="movie-list-container">
                 <h1 class="movie-list-title">Filmat me te shikuar</h1>
@@ -319,8 +311,29 @@ $images = array(
     
 </body>
 
+<<<<<<< Updated upstream
+ <script src="mainpage.js"></script> -->
+=======
+<!-- <script src="mainpage.js"></script> -->
+<script> var images = document.querySelectorAll('#slider img');
+var currentIndex = 0;
 
+function ndrroImg(index) {
+  images[currentIndex].classList.remove('active');
+  images[index].classList.add('active');
+  currentIndex = index;
+}
 
+setInterval(function() {
+  var newIndex = currentIndex + 1;
+  if (newIndex >= images.length) {
+    newIndex = 0;
+  }
+  ndrroImg(newIndex);
+}, 5000);
+  </script>
+
+>>>>>>> Stashed changes
 
 
 </html>
