@@ -1,4 +1,6 @@
-
+<?php
+$connect=mysqli_connect("localhost","root","","DOWNLOAD");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +18,7 @@
             </div>
             <div class="menu-container">
                 <ul class="menu-list">
-                <form action="../Main page/index.php">
+                <form action="../Main page/index1.php">
                      <li class="menu-list-item active"><button class="seriale" >Home</button></li>
                          </form>
                     <form action="../Movies/movies.php" >
@@ -61,6 +63,21 @@
 </div>
 <div id="dowload">
     <p id="down">Filmat e dowloaduar:</p>
+    <?php
+    $query="SELECT* FROM DOWNLOAD ";
+    $result=mysql_query($connect,$query);
+
+    while($row= mysqli_fetch_array($result)){?>
+
+<form method="get" action="index.php"id=<?=$row[i]?>">
+<img scr="img/<?=$row['image']?>" style="height:150px">
+<h2><?=$row['name'];?></h2>
+<h2><?=$row['price'];?></h2>
+
+
+</form>
+    <?php}
+    ?>
 </div>
             
   

@@ -155,12 +155,7 @@ if(!empty($username)){
 
 
 
-$hostname = "localhost";
-$username= "sa";
-$password = "";
-$db_name = "project";
 
-$connect = mysqli_connect($hostname, $username, $password, $db_name);
 
 			
 if (!$connect){
@@ -169,7 +164,7 @@ if (!$connect){
 
 ?>
 ?>*/
-<?php
+
  $db_host="localhost";
  $db_user="root";
  $db_password="tearoot123";
@@ -182,3 +177,56 @@ if (!$connect){
 	echo$e->getMessage();
  }
 ?>
+
+
+$conn=mysqli_connect("localhost","root","","MOVIEPAGE");
+
+-----------
+
+// Set up a database connection
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "MOVIEPAGE";
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+// Check if the form has been submitted
+if ($_SERVER['submit1'] == "POST") {
+
+  // Get the user input
+  $emri=$_POST['emri'];
+  $mbiemri=$_POST['mbiemri'];
+  $username=$_POST['username'];
+  $email=$_POST['email'];
+  $password=$_POST['password'];
+ $shteti=$_POST['shteti'];
+  $nrtel=$_POST['nrtel'];
+
+  
+  
+  if (mysqli_query($conn, $sql)) {
+	$sql = "INSERT INTO users (emri, mbiemri,username,email,password,shteti,nrtel) VALUES('','$emri','$mbiemri','$username','$email','$password','$shteti','$nrtel')";
+
+    echo"<script>alert('data is added man fund more allah');</script>";
+    exit();
+  } else {
+    // Handle the error
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  }
+
+  // Close the database connection
+  mysqli_close($conn);
+}
+*/
+
+$conn=mysqli_connect("localhost","root","","MOVIEPAGE");
+
+<?php
+?>
+
+
+
+
+
+

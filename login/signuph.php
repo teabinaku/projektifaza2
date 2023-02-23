@@ -1,27 +1,15 @@
 
 <?php
-require('signunpcon.php');
-session_start();
-if(isset($_SESSION['user'])){
-	header("location:index.php");
-}
-if(isset($_REQUEST['submit1'])){
-	$emri=$_REQUEST['emri'];
-	$mbiemri=$_REQUEST['mbiemri'];
-	$username=$_REQUEST['username'];
-	$password=$_REQUEST['password'];
-	$nrtel=$_REQUEST['nrtel'];
-	$email=$_REQUEST['email'];
-	$shteti=$_REQUEST['shteti'];
-	$tipi=$_REQUEST['tipi'];
+require_once'login/dowloaded.php';
 
-	if(empty($emri)){
-		$errorMsg[0][1]='Name required'
-	}
+$dowload=new dowloaded;
+if(isset($_POST['submit1'])){
+	$dowload->insert($_POST);
+}
 
 
 	
-}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -49,41 +37,11 @@ if(isset($_REQUEST['submit1'])){
 			<img src="5087579.png" >
 
 		
-			
 
-<!--
-if(isset($_POST['submit1'])){
-	$emri=$_POST['emri'];
-	$mbiemri=$_POST['mbiemri'];
-	$username=$_POST['username'];
-	$password=$_POST['password'];
-	$nrtel=$_POST['nrtel'];
-	$email=$_POST['email'];
-	$shteti=$_POST['shteti'];
-	$tipi=$_POST['tipi'];
-	if(!empty($_POST['emri']) && !empty($_POST['mbiemri']) && !empty($_POST['username'])   && !empty($_POST['password'])  && !empty($_POST['nrtel']) && !empty($_POST['email']) && !empty($_POST['shteti']) && !empty($_POST['tipi']) ){
-	$p=crud::connect()->prepare('INSERT INTO MOVIEPAGEE(emri,mbiemri,username,password,nrtel,email,shteti,tipi)VALUES(:n,:l,:u,:p,:m,"nr,:e,:sh,:t) ');
-   $p->bindvalue(':n',$emri);
-   $p->bindvalue(':l',$mbiemri);
-   $p->bindvalue(':u',$username);
-   $p->bindvalue(':p',$password);
- 
-   $p->bindvalue(':nr',$nrtel);
-   $p->bindvalue(':e',$email);
-   $p->bindvalue(':sh',$shteti);
-   $p->bindvalue(':t',$tipi);
-   $p->execute();
-
-}else{
-	header('Location:inde.php');
-}
-}
-*/
--->
-
-
-<form action="signunpcon.php" method="post">
+<form  method="POST">
 		<div class="Klasa2">
+		
+		
 			<label >Emri:</label>
 			<input  name="emri";type="text" placeholder="Ju lutem shkruani emrin"  id ="emri" class="kushtet">
             <br>

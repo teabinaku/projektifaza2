@@ -50,7 +50,7 @@
     <div >
         <p id="tekst2"><b>Opss...per te perdorur sherbimet tone ju duheni te kyceni...</b></p>
     </div>
-    <form action="../login/signuph.php">
+    <form action="../REGJISTRIM/register.php">
     <button id="signupbutton">Sign up here!</button>
 </form>
 

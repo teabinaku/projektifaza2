@@ -1,8 +1,12 @@
+<?php
+require'aujs.php';
+
+?>
 <!DOCTYPE html>
 <html >
 <head>
   
-    <title>About us/Contact us</title>
+<link rel="stylesheet" href="cssau.css?v=<?php echo time(); ?>">
     
     <link rel="stylesheet" href="cssau.css">
 </head>
@@ -17,7 +21,7 @@
             </div>
             <div class="menu-container">
                 <ul class="menu-list">
-                  <form action="../Main page/index.php">
+                <form action="../Main page/index1.php">
                      <li class="menu-list-item active"><button class="seriale">Home</button></li>
                     </form>
                     <form action="../Movies/movies.php" >
@@ -70,8 +74,13 @@
          <br> <br>
          
       <textarea id ="subject"  name ="subject" placeholder="Shkruani nje mesazh" style=" color:palevioletred; height:50px;"></textarea>
-      <br> <br>  <br> <br>
-        <button id ="submit"  onclick="auth(event)"  type = "button" onclick="validoLogin()"> Submit </button>
+      <br> 
+      <?php
+      <form action="aujs.php" method="POST">
+         <button name="submit" id ="submit" type = "button"<?php valido();?> > Submit </button>
+         <form>
+         ?>
+      
      </div>
    
 
@@ -85,7 +94,8 @@
     </div>
 
 </body>
-<script src="./aboujs.js">
-    </script>
+<!--<script>onclick="auth(event)"</script>
+<script type="text/javascript" src="./aboujs.js">
+    </script>-->
 
 </html>

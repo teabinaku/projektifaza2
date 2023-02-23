@@ -13,7 +13,7 @@
                   </div>
                   <div class="menu-container">
                       <ul class="menu-list">
-                        <form action="../Main page/index.php">
+                      <form action="../Main page/index1.php">
                            <li class="menu-list-item active"><button class="seriale">Home</button></li>
                           </form>
                           <form action="../Movies/movies.php" >
