@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming soon</title>
 
-<link rel="stylesheet" href="csscos.css">
+<link rel="stylesheet" href="csscos.css?v=<?php echo time(); ?>">
 
 
 </head>
@@ -40,6 +40,9 @@
             <form action="userthjesht.php">
             <button id="butoni"> <img  src="./avatar test.webp" id="avatar"></button>
             </form>
+            <form action="../watchlater/index2.php">
+                  <button id="butoni3"><img src="watchlater.webp" id="avatar4"></button>
+                  <form>
                     
                 </div>
                
