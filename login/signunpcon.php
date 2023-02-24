@@ -1,41 +1,22 @@
+<?php
+include 'signuph.php';
+
+$servername = "localhost";
+ $username = "root";
+ $password ;
+$database = "userssignup";
 
 
-
- <!--
-
+$conn = mysqli_connect($localhost, $username, $password, $userssignup);
 
 
- $host="localhost";
- $user="root";
- $password="";
- $db="demo";
-
- mysql_connect($host,$user,$password);
- mysql_select_db($db);
-
- if(isset($_POST['submit'])){
-    $emri=$_POST['emri'];
- $mbiemri=$_POST['mbiemri'];
- $username=$_POST['username'];
- $password=$_POST['password'];
- $email=$_POST['email'];
- $shteti=$_POST['shteti'];
-
-$sql="Select * from moviepagetable where emri='".$emri."'AND PASS='".$password"'limit1";
-
-$result=mysql_query($sql);
-if(mysql_num_rows($result)==1){
-    echo'You have access to the main page';
-    exit();
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
 
 
-   
- }else{
-    echo'You do not have access to the main page';
- }
-
-
-$conn=mysql_connect("localhost","root","","data");
+/*$conn=mysql_connect("localhost","root","","data");
 
 require'signunp.php';
 
@@ -52,17 +33,17 @@ $query="INSERT INTO moviepagetable VALUES('$emri, $mbiemri,$username, $password,
 mysqli_query($conn,$query);
 echo'uboooo';
 
+-->
 
-
-
-
+<?php
+/*
 
  class crud{
 	public static function connect(){
 		try{
 
 		
-		$con=new PDO('mysql:localhost=host;dbname=CRUD','sa','');
+		$con=new PDO('mysql:localhost=host;dbname=CRUD','root','');
 		return $con;
 		}catch(PDOexception $error1){
 			echo'Something went wrong ->Database error '.$error1->getMessage();
@@ -72,7 +53,6 @@ echo'uboooo';
 	}
 
 }
-
 
 Class dbCon{
 private $conn = null;
@@ -135,27 +115,35 @@ if(!empty($username)){
 
 				}
 
-		}else{
-			echo'Password should not be empty';
-		}
+ function fetch(){
+	$data = null;
+	$query = "SELECT * FROM moviepagetable";
+	if ($sql = $this->conn->query($query)) {
+		while ($row = mysqli_fetch_assoc($sql)) {
+			$data[] = $row;
 		}
 	}
+	return $data;
 }
-}
+*/
 
 
 
 
 
-
-?>
+   ?>
 
  
 
 
 
 
+$hostname = "localhost";
+$username= "sa";
+$password = "";
+$db_name = "project";
 
+$connect = mysqli_connect($hostname, $username, $password, $db_name);
 
 			
 if (!$connect){
@@ -164,7 +152,7 @@ if (!$connect){
 
 ?>
 ?>*/
-
+<?php
  $db_host="localhost";
  $db_user="root";
  $db_password="tearoot123";
@@ -177,56 +165,3 @@ if (!$connect){
 	echo$e->getMessage();
  }
 ?>
-
-
-$conn=mysqli_connect("localhost","root","","MOVIEPAGE");
-
------------
-
-// Set up a database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "MOVIEPAGE";
-
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-
-// Check if the form has been submitted
-if ($_SERVER['submit1'] == "POST") {
-
-  // Get the user input
-  $emri=$_POST['emri'];
-  $mbiemri=$_POST['mbiemri'];
-  $username=$_POST['username'];
-  $email=$_POST['email'];
-  $password=$_POST['password'];
- $shteti=$_POST['shteti'];
-  $nrtel=$_POST['nrtel'];
-
-  
-  
-  if (mysqli_query($conn, $sql)) {
-	$sql = "INSERT INTO users (emri, mbiemri,username,email,password,shteti,nrtel) VALUES('','$emri','$mbiemri','$username','$email','$password','$shteti','$nrtel')";
-
-    echo"<script>alert('data is added man fund more allah');</script>";
-    exit();
-  } else {
-    // Handle the error
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-  }
-
-  // Close the database connection
-  mysqli_close($conn);
-}
-*/
-
-$conn=mysqli_connect("localhost","root","","MOVIEPAGE");
-
-<?php
-?>
-
-
-
-
-
-

@@ -3,15 +3,13 @@ require'aujs.php';
 
 ?>
 <!DOCTYPE html>
-<html >
+<html>
 <head>
   
-<link rel="stylesheet" href="cssau.css?v=<?php echo time(); ?>">
+    <title>About us/Contact us</title>
     
     <link rel="stylesheet" href="cssau.css">
 </head>
-
-
 
 <body style="background-color:blueviolet">
     <div class="navbar">
@@ -37,18 +35,15 @@ require'aujs.php';
 
                 </ul>
             </div>
-            <input  id="tea" ;type="text"placeholder="Kerko.." name="search">
+            <input  id="tea" ;type="text" placeholder="Kerko.." name="search">
     <button id="butoni2" ><img src="./searchpurple.png" id="avatar2"></button>
     <form action="../profili/profilii.php">
     <button id="butoni"> <img  src="./avatar test.webp" id="avatar"></button>
-    </form>
+ 
 
                 </div>
                
             </div>
-        </div>
-    </div>
-    
 
 
   <div id = "contactform">
@@ -74,13 +69,8 @@ require'aujs.php';
          <br> <br>
          
       <textarea id ="subject"  name ="subject" placeholder="Shkruani nje mesazh" style=" color:palevioletred; height:50px;"></textarea>
-      <br> 
-      <?php
-      <form action="aujs.php" method="POST">
-         <button name="submit" id ="submit" type = "button"<?php valido();?> > Submit </button>
-         <form>
-         ?>
-      
+      <br> <br>  <br> <br>
+        <button id ="submit"  onclick="auth(event)"  type = "button" onclick="validoLogin()"> Submit </button>
      </div>
    
 
@@ -93,9 +83,11 @@ require'aujs.php';
     
     </div>
 
-</body>
-<!--<script>onclick="auth(event)"</script>
-<script type="text/javascript" src="./aboujs.js">
-    </script>-->
 
-</html>
+  
+
+</body>
+<script src="./aboujs.js">
+    </script>
+
+</html> 

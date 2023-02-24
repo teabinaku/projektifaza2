@@ -313,7 +313,7 @@
         opacity: 0;
       }
     }
-    -webkit-@keyframes round {
+       @keyframes round {
       25% {
         opacity: 1;
         -webkit-opacity: 1;
@@ -339,4 +339,3 @@
     img:nth-child(4) {
       animation-delay: 0s;
     }
-    
