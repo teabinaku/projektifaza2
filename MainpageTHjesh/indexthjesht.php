@@ -26,7 +26,7 @@
                     <li class="menu-list-item"><button class="seriale">Series</button></li>
                     </form>
                     <form action="../MainpageTHjesh/userthjesht.php">
-                    <li class="menu-list-item"> <button class="seriale">About us</button></li>
+                    <li class="menu-list-item"> <button class="seriale">About</button></li>
                   </form>
                   
                  

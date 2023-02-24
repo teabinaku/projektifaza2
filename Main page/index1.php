@@ -1,17 +1,5 @@
 
-<? php 
-/*
 
-$images = array(
-    '/Applications/XAMPP/xamppfiles/htdocs/projektifaza2/Main page/avatar23.jpeg',
-    '/Applications/XAMPP/xamppfiles/htdocs/projektifaza2/Main page/batman23.jpeg',
-    '/Applications/XAMPP/xamppfiles/htdocs/projektifaza2/Main page/intestellar23.jpeg',
-    '/Applications/XAMPP/xamppfiles/htdocs/projektifaza2/Main page/moonfall23.jpeg'
-  );
-
-*/
-
-?>
 <!DOCTYPE html>
 <html >
 <head>
@@ -40,7 +28,7 @@ $images = array(
                     <li class="menu-list-item"><button class="seriale">Series</button></li>
                     </form>
                     <form action="../About us/aboutus.php">
-                    <li class="menu-list-item"> <button class="seriale">About us</button></li>
+                    <li class="menu-list-item"> <button class="seriale">About</button></li>
                   </form>
                   
                  
@@ -371,6 +359,7 @@ $images = array(
         </div>
     </div>
     
+    
 </body>
 
 
@@ -378,3 +367,4 @@ $images = array(
 
 
 </html>
+
