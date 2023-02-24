@@ -3,7 +3,7 @@
 <head>
     
     <title>Movies</title>
-    <link rel="stylesheet" href="cssmov.css">
+    <link rel="stylesheet" href="cssmov.css?v=<?php echo time(); ?>">
 </head>
       <body style="background-color:#181818;">
           <div class="navbar">
@@ -39,6 +39,9 @@
                   <form action="../profili/profilii.php">
                   <button id="butoni"> <img  src="./avatar test.webp" id="avatar"></button>
                   </form>
+                  <form action="../watchlater/watchlater.php">
+                  <button id="butoni3"><img src="watchlater.webp" id="avatar4"></button>
+                  <form>
               </div>
           </div>
         

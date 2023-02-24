@@ -8,7 +8,7 @@ require'aujs.php';
   
     <title>About us/Contact us</title>
     
-    <link rel="stylesheet" href="cssau.css">
+    <link rel="stylesheet" href="cssau.css?v=<?php echo time(); ?>">
 </head>
 
 <body style="background-color:blueviolet">
@@ -39,6 +39,9 @@ require'aujs.php';
     <button id="butoni2" ><img src="./searchpurple.png" id="avatar2"></button>
     <form action="../profili/profilii.php">
     <button id="butoni"> <img  src="./avatar test.webp" id="avatar"></button>
+    <form action="../watchlater/watchlater.php">
+                  <button id="butoni3"><img src="watchlater.webp" id="avatar4"></button>
+                  <form>
  
 
                 </div>

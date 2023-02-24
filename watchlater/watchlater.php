@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profili</title>
-    <link rel="stylesheet" href="profilicss.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="watch.css">
 </head>
 <body style="background-color: blueviolet;">
     <div class="navbar">
@@ -39,7 +38,7 @@
                   <button id="butoni"> <img  src="./avatar test.webp" id="avatar"></button>
                   </form  >
                   <form action="../watchlater/watchlater.php">
-                  <button id="butoni3"><img src="./watchlater.webp" id="avatar4"></button>
+                  <button id="butoni3"><img src="watchlater.webp" id="avatar4"></button>
                   <form>
 </form>
 
@@ -47,30 +46,10 @@
                
             </div>
         </div>
-    </div>
-    <div id="divipar">
-        <img src="./User-Avatar-Profile-Transparent-Isolated-PNG.png" id="avatar3">
-        
-        
-      <div id="dividyt">
-            <span class="info">Username:</span>
-            <span class="info">Emri:</span>
-            <span class="info">Mbiemri:</span>
-            <span class="info">Email:</span>
-            
-        </div>
-        
-            
-</div>
-
-            
-  
-
-
 
     </div>
-   
+    <div style=" background-color: rgb(24,24,24);border-radius: 23px ;"> 
 
-    
-</body>
-</html>
+    </div>
+    </body>
+    </html>
