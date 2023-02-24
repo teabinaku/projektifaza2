@@ -1,14 +1,11 @@
-<?php
-require'aujs.php';
 
-?>
 <!DOCTYPE html>
 <html>
 <head>
   
     <title>About us/Contact us</title>
     
-    <link rel="stylesheet" href="cssau.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="cssau.css">
 </head>
 
 <body style="background-color:blueviolet">
@@ -35,27 +32,30 @@ require'aujs.php';
 
                 </ul>
             </div>
+
+
             <input  id="tea" ;type="text" placeholder="Kerko.." name="search">
     <button id="butoni2" ><img src="./searchpurple.png" id="avatar2"></button>
     <form action="../profili/profilii.php">
     <button id="butoni"> <img  src="./avatar test.webp" id="avatar"></button>
-    <form action="../watchlater/index.php">
-                  <button id="butoni3"><img src="watchlater.webp" id="avatar4"></button>
+    <form action="../watchlater/watchlater.php">
+                  <button id="butoni3"><img src="image.jpeg" id="avatar4"></button>
                   <form>
  
 
-                </div>
+                  </div>
                
-            </div>
-
+               </div>
+<!--watchlater.webp --> 
 
   <div id = "contactform">
       <h3 style="color: blueviolet ;font-size: xx-large;  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Contact form </h3>
+      <form name="ContactUs" onclick="return validimi()" method="post">
          <label class="font"> Emri :</label>
-         <input type ="text" id = "name"  placeholder="Shkruani emrin tuaj">
+         <input type ="text" id = "name" name = "name"  placeholder="Shkruani emrin tuaj">
          <br> <br>
          <label class="font"> Mbiemri :</label>
-         <input type = "text" id = "surname" placeholder="Shkruani mbiemrin tuaj ">
+         <input type = "text" id = "surname" name = "mbiemri" placeholder="Shkruani mbiemrin tuaj ">
          <br> <br>
          <label class="font"> Shteti :</label>
          <select id = "country" name = "country">
@@ -68,12 +68,12 @@ require'aujs.php';
          </select>
          <br> <br>
          <label class="font" >Email adresa: </label>
-         <input type = "email" id = "email" placeholder="Shkruani email-in tuaj">
+         <input type = "email" id = "email" name ="email"  placeholder="Shkruani email-in tuaj">
          <br> <br>
          
       <textarea id ="subject"  name ="subject" placeholder="Shkruani nje mesazh" style=" color:palevioletred; height:50px;"></textarea>
       <br> <br>  <br> <br>
-        <button id ="submit"  onclick="auth(event)"  type = "button" onclick="validoLogin()"> Submit </button>
+        <button type = "submit" id = "submit"  onclick = "validimi()"> Submit </button>
      </div>
    
 
@@ -86,11 +86,8 @@ require'aujs.php';
     
     </div>
 
-
-  
-
 </body>
-<script src="./aboujs.js">
+<script src="./aboutus.js">
     </script>
 
 </html> 
