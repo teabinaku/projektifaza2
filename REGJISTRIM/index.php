@@ -33,7 +33,7 @@
           ?>
       	</h3>
 		<div>
-		  <p id="flm">Faleminderit per viziten tuaj!</p>
+		  
 	 <form action="../Main page/index1.php">
 	  <button id="webmovie">Per te vazhduar ne WEBMOVIES klikoni ketu!</button>
 	</form>
