@@ -283,6 +283,23 @@ padding-top: 30px;
   border: none;
 
 }
+.movie-list-item-button1{
+  background-color: blueviolet;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  margin-left: 2.9cm;
+  padding: 10px;
 
+
+
+    
+
+    }
 
   

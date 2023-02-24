@@ -41,7 +41,7 @@
             <form action="../profili/profilii.php">
             <button id="butoni"> <img  src="./avatar test.webp" id="avatar"></button>
             </form>
-            <form action="../watchlater/watchlater.php">
+            <form action="../watchlater/index.php">
                   <button id="butoni3"><img src="watchlater.webp" id="avatar4"></button>
                   <form>
                     
