@@ -48,8 +48,7 @@
         </div>
 
     </div>
-    <div style=" background-color: rgb(24,24,24);border-radius: 23px ;"> 
-
-    </div>
+    
+   
     </body>
     </html>
