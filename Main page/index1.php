@@ -76,7 +76,7 @@
                             <img class="movie-list-item-img" src="./dekaaa.jpeg" alt="">
                             <span class="movie-list-item-title">Avatar</span>
                             <p class="movie-list-item-desc">Jake Sully and Ney'tiri have formed a family and are doing everything to stay together. However, they must leave their home and explore the regions of Pandora. When an ancient threat resurfaces, Jake must fight a difficult war against the humans.</p>
-                         <form action="../Comingsoon/comingsoon.php">
+                            <form action="../Comingsoon/comingsoon.php">
                             <button class="movie-list-item-button1">Watch</button>  
                         </form>
                           </div>
@@ -103,9 +103,7 @@
                             <img class="movie-list-item-img" src="./godfather.jpeg" alt="">
                             <span class="movie-list-item-title">The Godfather</span>
                             <p class="movie-list-item-desc">Widely regarded as one of the greatest films of all time, this mob drama, based on Mario Puzo's novel of the same name, focuses on the powerful Italian-American crime family of Don Vito Corleone (Marlon Brando)</p>
-                            <<form action="../watchlater/watchlater.php">
-                             <button class="movie-list-item-button">Watch Later</button>
-                               </form>
+                            
                              <form action="../Comingsoon/comingsoon.php">
                             <button class="movie-list-item-button1">Watch</button>  
                         </form>
@@ -127,9 +125,8 @@
                             <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
                                 hic fugit similique accusantium.</p>
                                 <form action="../Comingsoon/comingsoon.php">
-                                <button class="movie-list-item-button">Watch Later</button>
-                            <button class="movie-list-item-button1">Watch</button>
-                                   </form>
+                            <button class="movie-list-item-button1">Watch</button>  
+                        </form>
                         </div>
                     </div>
                   
@@ -162,9 +159,8 @@
                             <span class="movie-list-item-title">Avatar2</span>
                             <p class="movie-list-item-desc">Jake Sully and Ney'tiri have formed a family and are doing everything to stay together...</p>
                             <form action="../Comingsoon/comingsoon.php">
-                                <button class="movie-list-item-button">Watch Later</button>
-                            <button class="movie-list-item-button1">Watch</button>
-                                   </form>
+                            <button class="movie-list-item-button1">Watch</button>  
+                        </form>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="./dontworrt.jpeg" alt="">
@@ -216,9 +212,8 @@
                             <span class="movie-list-item-title">Pride and Prejudice</span>
                             <p class="movie-list-item-desc">Pride and Prejudice is an 1813 novel of manners by Jane Austen. The novel follows the character development of Elizabeth Bennet, the dynamic protagonist of the book who learns about the repercussions of hasty judgments and comes to appreciate the difference between superficial goodness and actual goodness.</p>
                             <form action="../Comingsoon/comingsoon.php">
-                                <button class="movie-list-item-button">Watch Later</button>
-                            <button class="movie-list-item-button1">Watch</button>
-                                   </form>
+                            <button class="movie-list-item-button1">Watch</button>  
+                        </form>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="./howtoloseaguy.jpeg" alt="">
@@ -262,9 +257,8 @@
                             <span class="movie-list-item-title">Batman</span>
                             <p class="movie-list-item-desc">Batman ventures into Gotham City's underworld when a sadistic killer leaves behind a trail of cryptic clues.</p>
                             <form action="../Comingsoon/comingsoon.php">
-                               <button class="movie-list-item-button">Watch Later</button>
-                            <button class="movie-list-item-button1">Watch</button>
-                               </form>
+                            <button class="movie-list-item-button1">Watch</button>  
+                        </form>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="./predator.jpeg" alt="">
