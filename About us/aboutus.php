@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
   
     <title>About us/Contact us</title>
-    
     <link rel="stylesheet" href="cssau.css">
 </head>
-
-
 
 <body style="background-color:blueviolet">
     <div class="navbar">
@@ -33,18 +30,15 @@
 
                 </ul>
             </div>
-            <input  id="tea" ;type="text"placeholder="Kerko.." name="search">
+            <input  id="tea" ;type="text" placeholder="Kerko.." name="search">
     <button id="butoni2" ><img src="./searchpurple.png" id="avatar2"></button>
     <form action="../profili/profilii.php">
     <button id="butoni"> <img  src="./avatar test.webp" id="avatar"></button>
-    </form>
+ 
 
                 </div>
                
             </div>
-        </div>
-    </div>
-    
 
 
   <div id = "contactform">
@@ -64,18 +58,21 @@
            <option value = "Albania"> Swizerland </option> 
            <option value = "Albania"> Macedonia</option> 
          </select>
-         <br> <br>
-         <label class="font" >Email adresa: </label>
-         <input type ="email" id = "email" placeholder ="Shkruani email-in tuaj">
-         <br> <br>
-         
-      <textarea id ="subject"  name ="subject" placeholder="Shkruani nje mesazh" style=" color:palevioletred; height:50px;"></textarea>
-      <br>
-     
-        <button type ="submit" id = "submit" name="submit"> Submit </button>
-</form>
-      </div>
+         <br> <br> 
+
+         <label class="font" > Email adresa: </label>
+         <input type ="email" id = "email" placeholder ="Shkruani email-in tuaj" >
+         <br> <br> <br>
+         <label class = "font"> Subject: </label>
+      <textarea id ="subject" name ="subject" placeholder="Shkruani nje mesazh" style=" color:palevioletred; height:50px;"></textarea>
+      <br> <br> <br>
    
+  <button type ="button" id = "submit" name = "submit" > Submit </button>
+
+  </div>
+
+
+
 
      <div id="firstdiv">
     <p id="tekst2"><h1>
@@ -87,8 +84,10 @@
     </div>
 
 
+  
+
 </body>
 
 
 
-</html>
+</html> 
