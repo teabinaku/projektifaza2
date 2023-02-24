@@ -50,7 +50,7 @@
     <form action="../profili/profilii.php">
     <button id="butoni"> <img  src="./avatar test.webp" id="avatar"></button>
     </form>
-    <form action="../watchlater/watchlater.php">
+    <form action="../watchlater/index.php">
                   <button id="butoni3"><img src="watchlater.webp" id="avatar4"></button>
                   <form>
    
@@ -69,8 +69,7 @@
                     <span class="movie-list-item-title">Brooklyn 99</span>
                     <p class="movie-list-item-desc">
                       Detective Jake Peralta, a talented and carefree cop with the best arrest record, has never had to follow the rules too closely or work very hard.</p>
-                     
-                             <form action="../Comingsoon/comingsoon.php">
+                      <form action="../Comingsoon/comingsoon.php">
                             <button class="movie-list-item-button1">Watch</button>  
                         </form>
                 </div>
@@ -78,8 +77,7 @@
                     <img class="movie-list-item-img" src="./Friends_TV_Series-344732706-large.jpeg">
                     <span class="movie-list-item-title">Friends</span>
                     <p class="movie-list-item-desc">Six young men and women live in the same apartment complex and face life and love together in Manhattan, New York City. As they're constantly sticking their noses into each another's businesses..</p>
-                   
-                             <form action="../Comingsoon/comingsoon.php">
+                    <form action="../Comingsoon/comingsoon.php">
                             <button class="movie-list-item-button1">Watch</button>  
                         </form>
                 </div>
@@ -88,8 +86,7 @@
                     <span class="movie-list-item-title">The office</span>
                     <p class="movie-list-item-desc">
                         This US adaptation, set at a paper company in Scranton, Pa., has a similar documentary style to that of the Ricky Gervais-led British original. It features the staff of Dunder-Mifflin, a staff that includes characters based on characters from the British show.. </p>
-                        
-                             <form action="../Comingsoon/comingsoon.php">
+                        <form action="../Comingsoon/comingsoon.php">
                             <button class="movie-list-item-button1">Watch</button>  
                         </form>
                 </div>
@@ -98,8 +95,7 @@
                     <span class="movie-list-item-title">Breaking Bad</span>
                     <p class="movie-list-item-desc">
                         Mild-mannered high school chemistry teacher Walter White thinks his life can't get much worse. His salary barely makes ends meet, a situation not likely to improve once his pregnant wife gives birth, and their teenage son is battling cerebral palsy.. </p>
-                      
-                             <form action="../Comingsoon/comingsoon.php">
+                        <form action="../Comingsoon/comingsoon.php">
                             <button class="movie-list-item-button1">Watch</button>  
                         </form>
                 </div>

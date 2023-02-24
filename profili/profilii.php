@@ -1,4 +1,23 @@
 
+<?php
+
+//storing database details in variables.
+    $hostname = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "registration";
+
+    //creating connection to database
+    $con = mysqli_connect($hostname, $username, $password, $dbname);
+    //checking if connection is working or not
+    if(!$con)
+    {
+        die("Connection failed!" . mysqli_connect_error());
+    }
+    $sql = "SELECT * FROM users";
+    //fire query
+    $result = mysqli_query($con, $sql);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,29 +67,45 @@
             </div>
         </div>
     </div>
+    
     <div id="divipar">
         <img src="./User-Avatar-Profile-Transparent-Isolated-PNG.png" id="avatar3">
         
+        <div id="body">
+        <div id="left">
+        </div></div>
+</div>
+<div id="dividyt";>
+<?php
+if(mysqli_num_rows($result) > 0)
+{
+  // first record
+  $row = mysqli_fetch_assoc($result);
+  echo " - Username: ". $row["username"]. " Email: ". $row["email"];
+    $row = mysqli_fetch_assoc($result);
+ 
+}
+else
+{
+  echo "0 results";
+}
+?>
+   
+</div>
+   
+
+
+        <!--
         
       <div id="dividyt">
+        <h2 id="dhenat">The dhenat:</h2>
             <span class="info">Username:</span>
-            <span class="info">Emri:</span>
-            <span class="info">Mbiemri:</span>
             <span class="info">Email:</span>
             
-        </div>
+        </div>-->
         
             
-</div>
 
-            
-  
-
-
-
-    </div>
    
 
     
-</body>
-</html>

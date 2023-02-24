@@ -13,20 +13,23 @@
 
        }
 #firstdiv{
-   padding-top: 7cm;
+
    text-align: center;
-   padding-top: 7cm;
    text-align: center;
    color: purple;
    font-size: small;
    font-family: ui-sans-serif;
-   margin: 300px;
-   position: absolute;
-   right: auto;
-   padding-bottom: 250px;
-
-
+   /* position: absolute; */
+   /* right: auto; */
+   /* padding-bottom: 250px; */
+   margin: 50px;
+   margin-top: 6cm;
 }
+
+   
+
+
+
 .navbar {
  width: 100%;
  height: 50px;
@@ -133,22 +136,42 @@
 }
 
 
-#submit {
-  border-radius:50px;
-  width:200px;
+.submit {
+   border-radius: 50px;
+   width: 200px;
+   justify-self: center;
+   width: 200px;
+   /* color: blueviolet; */
+   /* border-radius: 50px; */
+   /* text-align: center; */
+   width: 500px;
+   height: 70px;
+   /* background-color: lightgray; */
+   background-color: blueviolet;
+   border: none;
+   margin-left: 12cm;
+   font-size: larger;
+    color: black;
 
 
-  justify-self: center;
-  width: 200px;
-   color: blueviolet;
-    border-radius: 50px;
-     text-align: center; 
-    
-      width:200px;
-       height:30px;
-        background-color:lightgray;
 
-
+}
+.submit:hover{
+   border-radius: 50px;
+   width: 200px;
+   justify-self: center;
+   width: 200px;
+   /* color: blueviolet; */
+   /* border-radius: 50px; */
+   /* text-align: center; */
+   width: 500px;
+   height: 70px;
+   /* background-color: lightgray; */
+   background-color: black;
+   border: none;
+   margin-left: 12cm;
+   font-size: larger;
+    color: white;
 
 }
 #butoni3{

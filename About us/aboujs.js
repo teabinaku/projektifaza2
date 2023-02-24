@@ -1,4 +1,5 @@
 function auth(event) {
+    /*
     event.preventDefault();
 
     var country = document.getElementById("country").value;
@@ -17,7 +18,7 @@ function auth(event) {
         alert('Forma juaj pranohet');
         
     }
-  
+  */
 
    
   

@@ -150,9 +150,9 @@
     justify-content: center;
     margin-left: 30px;
     margin-bottom: 1.3cm;
-    color: blueviolet;
+    color: white;
     margin-top: 1cm;
-    margin-right: 9cm;
+    margin-right: 10cm;
 
 
 }
@@ -169,11 +169,11 @@
 
 
 #dividyt{
-    height: 15cm;
+    height: 10cm;
     background-color: rgb(24,24,24);
     width: 15cm;
     margin-left: 2cm;
-    margin-top:2cm;
+    margin-top: 2cm;
     border-radius: 23px;
 
 }
@@ -202,5 +202,11 @@
     width: 25px;
     height: 25px;
     margin-left: 0.2cm;
+}
+#dhenat{
+    color: blueviolet;
+    font-family: serif;
+    padding: 25px;
+    
 }
 
