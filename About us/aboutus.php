@@ -5,7 +5,7 @@
   
     <title>About us/Contact us</title>
     
-    <link rel="stylesheet" href="cssau.css">
+    <link rel="stylesheet" href="cssau.css?v=<?php echo time(); ?>">
 </head>
 
 <body style="background-color:blueviolet">
@@ -47,34 +47,12 @@
                
             </div>
 
-
-  <div id = "contactform">
-      <h3 style="color: blueviolet ;font-size: xx-large;  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Contact form </h3>
-         <label class="font"> Emri :</label>
-         <input type ="text" id = "name"  placeholder="Shkruani emrin tuaj">
-         <br> <br>
-         <label class="font"> Mbiemri :</label>
-         <input type = "text" id = "surname" placeholder="Shkruani mbiemrin tuaj ">
-         <br> <br>
-         <label class="font"> Shteti :</label>
-         <select id = "country" name = "country">
-           <option value = "Kosova"> Kosova </option>
-           <option value = "Albania"> Albania </option> 
-           <option value = "Albania"> Germany </option> 
-           <option value = "Albania"> France </option> 
-           <option value = "Albania"> Swizerland </option> 
-           <option value = "Albania"> Macedonia</option> 
-         </select>
-         <br> <br>
-         <label class="font" >Email adresa: </label>
-         <input type = "email" id = "email" placeholder="Shkruani email-in tuaj">
-         <br> <br>
-         
-      <textarea id ="subject"  name ="subject" placeholder="Shkruani nje mesazh" style=" color:palevioletred; height:50px;"></textarea>
-      <br> <br>  <br> <br>
-        <button id ="submit"  onclick="auth(event)"  type = "button" onclick="validoLogin()"> Submit </button>
-     </div>
    
+</body>
+<form action="./contactform.php">
+    <button class="hidden" ></button>
+</form>
+
 
      <div id="firstdiv">
     <p id="tekst2"><h1>
@@ -84,12 +62,15 @@
         <br> 
    
     </div>
+    <form action="./contactform.php">
+    <button class="submit" >Ne qoftese deshironi te plotesoni nje forme klikoni ketu!</button>
+</form>
 
 
   
 
 </body>
-<script src="./aboujs.js">
-    </script>
+
+
 
 </html> 

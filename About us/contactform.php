@@ -59,7 +59,23 @@ function test_input($data) {
 <body style="background-color:blueviolet">
 
 
-
+<div style="justify-content: center;
+    width: 600px;
+    height: 500px;
+    padding: auto;
+    margin-top: 1cm;
+    border-style: solid;
+    margin: auto;
+    position: absolute;
+    right: auto;
+    border: none;
+    border-radius: 23px;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    background-color: rgb(24,24,24);
+    margin-top: 1cm;">
             <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
   Name: <input type="text" name="name" value="<?php echo $name;?>">
   <span class="error">* <?php echo $nameErr;?></span>
@@ -72,6 +88,7 @@ function test_input($data) {
   <br><br>
   <input type="submit" name="submit" value="Submit">
 </form>
+</div>
 
 <?php
 // if form is submitted and all fields are valid
