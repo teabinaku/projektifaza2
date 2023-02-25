@@ -46,7 +46,7 @@
   	  <button type="submit" class="btn" name="reg_user">Sign Up</button>
   	</div>
   	<p>
-  		Vazhdo si perdorues i thjeshte? <a href="indexthjesht.php">KLIKO KETU</a>
+  		Vazhdo si perdorues i thjeshte? <a href="../MainpageTHjesh/indexthjesht.php">KLIKO KETU</a>
   	</p>
   </form>
 </body>

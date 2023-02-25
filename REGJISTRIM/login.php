@@ -35,7 +35,7 @@
   	<div class="input-group">
   		<button type="submit" class="btn" name="login_user">Login</button>
   	</div>
-  	<p>
+	  <p>
   		Vazhdo si perdorues i thjeshte? <a href="../MainpageTHjesh/indexthjesht.php">KLIKO KETU</a>
   	</p>
   </form>

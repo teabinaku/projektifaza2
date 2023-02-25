@@ -51,9 +51,10 @@
     <div >
         <p id="tekst2"><b>Opss...per te perdorur sherbimet tone ju duheni te kyceni...</b></p>
     </div>
-    <form action="../REGJISTRIM/register.php">
-    <button id="signupbutton">Sign up here!</button>
-</form>
+    
+    <p id="hh">
+  		Vazhdo si perdorues i thjeshte? <a style="color:black" href="../REGJISTRIM/register.php">KLIKO KETU</a>
+  	</p>
 
 
 
