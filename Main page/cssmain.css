@@ -41,6 +41,12 @@
         
     
         }
+        .movie-list-item-button2{
+          border: none;
+          background-color: black;
+          font: black;
+
+        }
         #butoni3{
           border-radius: 16px;
           width: 1cm;

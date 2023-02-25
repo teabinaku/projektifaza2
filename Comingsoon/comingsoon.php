@@ -19,7 +19,7 @@
             </div>
             <div class="menu-container">
                 <ul class="menu-list">
-                  <form action="../Main page/index.php">
+                  <form action="../Main page/index1.php">
                      <li class="menu-list-item active"><button class="seriale">Home</button></li>
                     </form>
                     <form action="../Movies/movies.php" >
@@ -28,7 +28,7 @@
                     <form action="../Series/series.php">
                     <li class="menu-list-item"><button class="seriale">Series</button></li>
                     </form>
-                    <form action="../About us/aboutus.php">
+                    <form action="../About us/form.php">
                     <li class="menu-list-item" ><button class="seriale">About us</button></li>
                   </form>
                    
@@ -38,9 +38,7 @@
   
             <input  id="tea" ;type="text"placeholder="Kerko.." name="search">
             <button id="butoni2" ><img src="./searchpurple.png" id="avatar2"></button>
-            <form action="../profili/profilii.php">
-            <button id="butoni"> <img  src="./avatar test.webp" id="avatar"></button>
-            </form>
+            
             <form action="../watchlater/index.php">
                   <button id="butoni3"><img src="watchlater.webp" id="avatar4"></button>
                   <form>

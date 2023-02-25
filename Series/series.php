@@ -33,7 +33,7 @@
             <form action="../Series/series.php">
             <li class="menu-list-item"><button class="seriale">Series</button></li>
             </form>
-            <form action="../watchlater/index.php">
+            <form action="../About us/form.php">
             <li class="menu-list-item"><button class="seriale">About us</button></li>
           </form>
            
@@ -47,15 +47,17 @@
             
     <input  id="tea" ;type="text"placeholder="Kerko.." name="search">
     <button id="butoni2" ><img src="./searchpurple.png" id="avatar2"></button>
-    <form action="../profili/profilii.php">
-    <button id="butoni"> <img  src="./avatar test.webp" id="avatar"></button>
-    </form>
+  
+    
     <form action="../watchlater/index.php">
                   <button id="butoni3"><img src="watchlater.webp" id="avatar4"></button>
                   <form>
    
 </div>
 </div>
+<form action="../Comingsoon/comingsoon.php">
+                            <button class="movie-list-item-button2">Watch</button>  
+                        </form>
 
 <div class="container">
 <div class="content-container">

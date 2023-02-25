@@ -18,6 +18,19 @@
     height: 25px;
     margin-left: 0.2cm;
 }
+.movie-list-item-button2{
+  border: none;
+  background-color:#181818;
+  color:#181818;
+}
+#butoni5{
+  border: none;
+  background-color: black;
+  color: black;
+  width: 1px;
+  height: 1px;
+}
+
    
   
    .navbar {

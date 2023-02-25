@@ -37,10 +37,8 @@
   
             <input  id="tea" ;type="text"placeholder="Kerko.." name="search">
             <button id="butoni2" ><img src="./searchpurple.png" id="avatar2"></button>
+         
             <form action="userthjesht.php">
-            <button id="butoni"> <img  src="./avatar test.webp" id="avatar"></button>
-            </form>
-            <form action="../watchlater/index2.php">
                   <button id="butoni3"><img src="watchlater.webp" id="avatar4"></button>
                   <form>
                     
